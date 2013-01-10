@@ -1,4 +1,4 @@
-<h2>Graphisme Dynamique</h2>
+Graphisme Dynamique
 ===================================
 
 Les codes des séances.
