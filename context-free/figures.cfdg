@@ -1,0 +1,9 @@
+startshape FIGURES
+
+CF::Background = [b -1 ]
+
+shape FIGURES {
+	CIRCLE [ x 0 hue 300 sat 1 b 1 ]
+	TRIANGLE [ x 0.5 s 1.15 y -0.17 hue 120 sat 1 b 1]
+	SQUARE [ x 1 b 1 a -0.5 ] 
+}

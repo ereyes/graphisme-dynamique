@@ -1,0 +1,8 @@
+startshape grille
+
+shape grille {
+	
+	loop 50 [ x 1.1 hue 4 sat 1 b 1]
+	loop 50 [ y 1.1 hue 4 sat 1 b 1]
+	SQUARE [ ]
+}
