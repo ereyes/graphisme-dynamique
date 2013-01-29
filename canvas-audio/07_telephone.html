@@ -1,0 +1,340 @@
+<!--
+
+Audio App simple pour tester audio + canvas
+Audio de : http://www.soundjay.com/
+Images de : Y!DesignStencils
+Code ispiré de Fulton 2011 : réutilisation de sons pré-chargés
+
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Téléphone</title>
+<script>
+
+window.addEventListener('load', function(){ appAudio(); }, false);	
+
+function formatSupporte(audio) {
+	
+	var donneExtension = "";
+	
+	if (audio.canPlayType("audio/ogg") =="probably" || audio.canPlayType("audio/ogg") == "maybe") {
+		donneExtension = "ogg";
+	} else if(audio.canPlayType("audio/wav") =="probably" || audio.canPlayType("audio/wav") == "maybe") {
+		donneExtension = "wav";
+	} else if(audio.canPlayType("audio/mp3") == "probably" || audio.canPlayType("audio/mp3") == "maybe") {
+		donneExtension = "mp3";
+	}
+	
+	return donneExtension;
+	
+}
+
+function appAudio() {
+
+	const ETAT_ORIGINE = 10;
+	const ETAT_LOADING = 20;
+	const ETAT_RESET = 30;
+	const ETAT_MARCHE = 40;
+	
+	var etatApp = ETAT_ORIGINE;
+	var loadCount=0;
+	var itemsToLoad = 0;
+	var touche1 = new Image();
+	var touche2 = new Image();
+	var touche3 = new Image();
+		
+	const TOUCHE_01 =  "cell-phone-1-nr1";
+	const TOUCHE_02 =  "cell-phone-1-nr2";
+	const TOUCHE_03 =  "cell-phone-1-nr3";
+	const RING = "telephone-ring-3";
+	const MAX_SOUNDS = 12;
+	
+	var soundPool = new Array();
+	var touche01_1;
+	var touche01_2;
+	var touche01_3;
+	var touche02_1;
+	var touche02_2;
+	var touche02_3;
+	var touche03_1;
+	var touche03_2;
+	var touche03_3;
+	var ring;
+	var ring2;
+	var ring3;
+	var isOne = false;
+	var isTwo = false;
+	var isThree = false;
+
+  	var canvas = document.getElementById('monCanvas');
+	var context = canvas.getContext("2d");
+  
+  
+  
+  function itemLoaded(event) {
+	
+	loadCount++;
+	if (loadCount >= itemsToLoad) {
+	
+		touche01_1.removeEventListener("canplaythrough",itemLoaded, false);
+		touche01_2.removeEventListener("canplaythrough",itemLoaded, false);
+		touche01_3.removeEventListener("canplaythrough",itemLoaded, false);
+		touche02_1.removeEventListener("canplaythrough",itemLoaded, false);
+		touche02_2.removeEventListener("canplaythrough",itemLoaded, false);
+		touche02_3.removeEventListener("canplaythrough",itemLoaded, false);
+		touche03_1.removeEventListener("canplaythrough",itemLoaded, false);
+		touche03_2.removeEventListener("canplaythrough",itemLoaded, false);
+		touche03_3.removeEventListener("canplaythrough",itemLoaded, false);		
+		ring.removeEventListener("canplaythrough",itemLoaded, false);
+		ring2.removeEventListener("canplaythrough",itemLoaded, false);
+		ring3.removeEventListener("canplaythrough",itemLoaded, false);		
+		soundPool.push({name:"cell-phone-1-nr1", element:touche01_1, played:false});
+		soundPool.push({name:"cell-phone-1-nr1", element:touche01_2, played:false});
+		soundPool.push({name:"cell-phone-1-nr1", element:touche01_3, played:false});
+		soundPool.push({name:"cell-phone-1-nr2", element:touche02_1, played:false});
+		soundPool.push({name:"cell-phone-1-nr2", element:touche02_2, played:false});
+		soundPool.push({name:"cell-phone-1-nr2", element:touche02_3, played:false});
+		soundPool.push({name:"cell-phone-1-nr3", element:touche03_1, played:false});
+		soundPool.push({name:"cell-phone-1-nr3", element:touche03_2, played:false});
+		soundPool.push({name:"cell-phone-1-nr3", element:touche03_3, played:false});
+		soundPool.push({name:"telephone-ring-3", element:ring, played:false});
+		soundPool.push({name:"telephone-ring-3", element:ring2, played:false});
+		soundPool.push({name:"telephone-ring-3", element:ring3, played:false});		
+		
+		etatApp = ETAT_RESET;
+		
+	}
+
+  }
+  
+  function initApp() {
+  	loadCount=0;
+	itemsToLoad = 9;
+	
+	touche01_1 = document.createElement("audio");
+	document.body.appendChild(touche01_1);
+	audioType = formatSupporte(touche01_1);
+	touche01_1.setAttribute("src", "cell-phone-1-nr1." + audioType);
+	touche01_1.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche01_2 = document.createElement("audio");
+	document.body.appendChild(touche01_2);
+	audioType = formatSupporte(touche01_2);
+	touche01_2.setAttribute("src", "cell-phone-1-nr1." + audioType);
+	touche01_2.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche01_3 = document.createElement("audio");
+	document.body.appendChild(touche01_2);
+	audioType = formatSupporte(touche01_2);
+	touche01_3.setAttribute("src", "cell-phone-1-nr1." + audioType);
+	touche01_3.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche02_1 = document.createElement("audio");
+	document.body.appendChild(touche02_1);
+	audioType = formatSupporte(touche02_1);
+	touche02_1.setAttribute("src", "cell-phone-1-nr2." + audioType);
+	touche02_1.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche02_2 = document.createElement("audio");
+	document.body.appendChild(touche02_2);
+	audioType = formatSupporte(touche02_2);
+	touche02_2.setAttribute("src", "cell-phone-1-nr2." + audioType);
+	touche02_2.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche02_3 = document.createElement("audio");
+	document.body.appendChild(touche02_2);
+	audioType = formatSupporte(touche02_2);
+	touche02_3.setAttribute("src", "cell-phone-1-nr2." + audioType);
+	touche02_3.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche03_1 = document.createElement("audio");
+	document.body.appendChild(touche03_1);
+	audioType = formatSupporte(touche03_1);
+	touche03_1.setAttribute("src", "cell-phone-1-nr3." + audioType);
+	touche03_1.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche03_2 = document.createElement("audio");
+	document.body.appendChild(touche03_1);
+	audioType = formatSupporte(touche03_1);
+	touche03_2.setAttribute("src", "cell-phone-1-nr3." + audioType);
+	touche03_2.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche03_3 = document.createElement("audio");
+	document.body.appendChild(touche03_1);
+	audioType = formatSupporte(touche03_1);
+	touche03_3.setAttribute("src", "cell-phone-1-nr3." + audioType);
+	touche03_3.addEventListener("canplaythrough",itemLoaded,false);
+	
+	ring = document.createElement("audio");
+	document.body.appendChild(ring);
+	ring.setAttribute("src", "telephone-ring-3." + audioType);
+	ring.addEventListener("canplaythrough",itemLoaded,false);
+
+	ring2 = document.createElement("audio");
+	document.body.appendChild(ring2);
+	ring2.setAttribute("src", "telephone-ring-3." + audioType);
+	ring2.addEventListener("canplaythrough",itemLoaded,false);
+
+	ring3 = document.createElement("audio");
+	document.body.appendChild(ring3);
+	ring3.setAttribute("src", "telephone-ring-3." + audioType);
+	ring3.addEventListener("canplaythrough",itemLoaded,false);
+	
+	touche1 = new Image();
+	touche1.onload = itemLoaded;
+	touche1.src = "touche01.png";
+	
+	touche2 = new Image();
+	touche2.onload = itemLoaded;
+	touche2.src = "touche02.png";
+	
+	touche3 = new Image();
+	touche3.onload = itemLoaded;
+	touche3.src = "touche03.png";
+	
+	etatApp = ETAT_LOADING;
+	
+  
+  }
+
+ 
+
+  
+  function resetApp() {
+ 	
+	playSound(TOUCHE_01,0);
+	playSound(TOUCHE_02,0);
+	playSound(TOUCHE_03,0);
+	playSound(RING,0);
+	isOne = false;
+	isTwo = false;
+	isThree = false;
+	etatApp = ETAT_MARCHE;
+	
+  }
+  
+  function  dessiner () {
+  
+		//Background
+		
+		context.fillStyle = "#000";
+		context.fillRect(0, 0, canvas.width, canvas.height);
+		
+		//Draw Touches
+		context.drawImage(touche1,50,100);
+		context.drawImage(touche2,100,100);
+		context.drawImage(touche3,150,100);	
+  		
+		context.fillStyle = "#eee";
+		context.font = 'bold 10px Arial';
+		context.fillText("Composez une séquence", canvas.width-300, canvas.height/2.35);
+
+		
+	}
+	
+
+	
+	function eventMouseUp(event) {
+		
+		// Récupérer les coordonnées du clic
+		var clickX = event.pageX - canvas.offsetLeft;
+		var clickY = event.pageY - canvas.offsetTop;
+		
+		if(clickX >= 50 && clickX <= 76 && clickY >=100 && clickY <= 141) {
+			playSound(TOUCHE_01,.5);
+			isOne = true;
+		}
+		if(clickX >= 100 && clickX <= 126 && clickY >=100 && clickY <= 141) {
+			playSound(TOUCHE_02,.5);	
+			isTwo = true;
+		}
+		if(clickX >= 150 && clickX <= 226 && clickY >=100 && clickY <= 141) {
+			playSound(TOUCHE_03,.5);
+			isThree = true;
+		}
+
+		if(isOne == true && isTwo == true  && isThree == true ) {			
+			playSound(RING,.5);
+			alert("Allo !");
+			isOne = false;
+			isTwo = false;
+			isThree = false;
+		}		
+
+
+	}
+
+	
+	function playSound(sound,volume) {
+	
+		var soundFound = false;
+		var soundIndex = 0;
+		var tempSound;
+		
+		if (soundPool.length > 0) {
+			while (!soundFound && soundIndex < soundPool.length) {
+			
+				var tSound = soundPool[soundIndex];
+				if ((tSound.element.ended || !tSound.played) && tSound.name == sound) {
+					soundFound = true;
+					tSound.played = true;
+				} else {
+					soundIndex++;
+				}
+		
+			}
+		}
+		if (soundFound) {
+			tempSound = soundPool[soundIndex].element;
+			tempSound.volume = volume;
+			tempSound.play();
+			
+		} else if (soundPool.length < MAX_SOUNDS){
+			tempSound = document.createElement("audio");
+			tempSound.setAttribute("src", sound + "." + audioType);
+			tempSound.volume = volume;
+			tempSound.play();
+			soundPool.push({name:sound, element:tempSound, type:audioType, played:true});
+		}
+		
+		
+		
+	
+	}
+	
+	function run() {
+  	switch(etatApp) {
+		case ETAT_ORIGINE:
+			initApp();
+			break;
+		case ETAT_LOADING:
+			//wait for call backs
+			break;
+		case ETAT_RESET:
+			resetApp();
+			break;
+		case ETAT_MARCHE:
+			dessiner();
+			break;		
+			 	
+	}
+  
+  }
+	
+	canvas.addEventListener("mousedown",eventMouseUp, false);
+	
+	setInterval(run, 33);	
+	
+}
+
+
+</script>
+</head>
+
+<body>
+<canvas id="monCanvas" width="500" height="300"></canvas>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!-- 
+
+cet exemple affiche les propriétés de l'audio de <audio src="xxx.xxx"> dans un <canvas>
+il montre aussi un pre-loader en utilisant l'événement "progress"
+Adapté de Fulton 2011
+Audio de Wick-it the Instigator, album The Brothers of Chico Dusty, disponible sur SoundCloud.
+
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Balise Audio</title>
+
+<style>
+
+canvas { border:1px solid gray; }
+div { font-family:Arial; margin:10px; }
+
+</style>
+
+<script>
+
+function appAudio() {
+
+  var canvas = document.getElementById("monCanvas");
+  var context = canvas.getContext("2d");
+  var audioElem = document.getElementById("monAudio");
+  
+  audioElem.load();
+  audioElem.addEventListener("progress",function() {  
+		var percentLoaded = parseInt(((audioElem.buffered.end(0) /audioElem.duration) * 100));
+		document.getElementById("loader").innerHTML =   'loaded ' + percentLoaded + '%';
+  },true);
+  
+  
+  audioElem.play();
+  
+  function dessiner() {
+ 
+
+		// Fond
+		
+		context.fillStyle = "#666";
+		context.fillRect(0, 0, canvas.width, canvas.height);
+		
+		
+		// Texte
+		context.fillStyle    = "#eee";
+		context.fillText  ("Duration: " + audioElem.duration,  20 ,30);
+		context.fillText  ("Current time: " + audioElem.currentTime,  20 ,60);
+		context.fillText  ("Loop: " + audioElem.loop,  20 ,90);
+		context.fillText  ("Autoplay: " + audioElem.autoplay,  20 ,120);
+		context.fillText  ("Muted: " + audioElem.muted,  20 ,150);
+		context.fillText  ("Controls: " + audioElem.controls,  20 ,180);
+		context.fillText  ("Volume: " + audioElem.volume,  20 ,210);
+		context.fillText  ("Paused: " + audioElem.paused,  20 ,240);
+		context.fillText  ("Ended: " + audioElem.ended,  20 ,270);
+		context.fillText  ("Source: " + audioElem.currentSrc,  20 ,300);
+		context.fillText  ("Can Play OGG: " + audioElem.canPlayType("audio/ogg"),  20 ,330);
+		context.fillText  ("Can Play WAV: " + audioElem.canPlayType("audio/wav"),  20 ,360);
+		context.fillText  ("Can Play MP3: " + audioElem.canPlayType("audio/mp3"),  20 ,390);
+		
+		context.font = "normal 15px Arial";		
+  			
+	}
+
+	setInterval(dessiner, 33);	
+	
+}
+
+
+</script>
+
+</head>
+
+<body onLoad="appAudio();">
+
+<canvas id="monCanvas" width="600" height="420"></canvas>
+
+<div id="loader"> loaded : 0% </div>
+
+<audio id="monAudio" controls>
+    <source src="fatsax.mp3" />
+    <source src="fatsax.ogg" />
+    Je ne peux pas lire la balise audio.
+</audio>
+
+</body>
+</html>
