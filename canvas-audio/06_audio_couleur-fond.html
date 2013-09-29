@@ -58,7 +58,7 @@ function appAudio() {
 
 		// Fond
 		
-		context.fillStyle = "rgb("+Math.floor(audioElem.currentTime)+","+Math.floor(audioElem.currentTime)+","+Math.floor(audioElem.currentTime)+")";
+		context.fillStyle = "rgb("+Math.floor(Math.random()*audioElem.currentTime*0.5)+","+Math.floor(audioElem.currentTime)+","+Math.floor(audioElem.currentTime)+")";
 		
 		context.fillRect(0, 0, canvas.width, canvas.height);
 		

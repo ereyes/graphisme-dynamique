@@ -4,11 +4,13 @@ Graphisme Dynamique
 Codes des séances
 
 Graphisme Dynamique
-Master DIMI | Design d'interface Multimédia et Internet
+Master 2 DIMI | Design d'interface Multimédia et Internet
 
 ----------------------------
 
 Historique de versions
+
+Version 0.3 /  Octobre 2013 - Mars 2014
 
 Version 0.2 /  Octobre 2012 - Mars 2013
 
