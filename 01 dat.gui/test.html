@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+
+#carre {
+	width:200px;
+	height:200px;
+	position:absolute;
+	background-color:lime;
+	border-radius:20px;
+}
+
+</style>
+
+<script src="dat.gui.min.js"></script>
+<script>
+
+window.onload = function() {
+	//définition de la classe et ses propriétés
+	var DatGui = function(){
+		this.posX = 10;
+		this.posY = 10;
+	};
+	
+	// création de l'objet
+	
+	var monGUI = new DatGui();
+	
+	// passage de propriétés de la classe à l'objet
+	var gui = new dat.GUI();
+	
+	var guiMaPosX = gui.add(monGUI, 'posX', 0, 700);
+	var guiMaPosY = gui.add(monGUI, 'posY', 0, 700);
+	
+	// fonctions 
+	guiMaPosX.onChange(function(value){
+		document.getElementById('carre').style.left = monGUI.posX + 'px';
+	});
+	
+	guiMaPosY.onChange(function(value){
+		document.getElementById('carre').style.top = monGUI.posY + 'px';
+	});
+
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="carre"></div>
+
+</body>
+</html>
