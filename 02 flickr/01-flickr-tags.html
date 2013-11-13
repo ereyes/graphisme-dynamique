@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flickr tags</title>
+
+<script src="jquery-2.0.3.min.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+        
+		// cette ligne est l'adresse URL vers le fils de photos taggées paris chez Flickr sous format JSON
+		var jsonURL = "http://api.flickr.com/services/feeds/photos_public.gne?tags=nyc&tagmode=ANY&format=json&jsoncallback=?";
+		
+		// .getJSON est la fonction de JQuery pour parser un document JSON
+		$.getJSON(jsonURL, function(data) {
+		
+			// .each es la fonction de JQuery pour les boucles
+			$.each(data.items, function(i, photo) {
+				
+				// la variable photoHTML est utilisé pour structures less données sous format HTML
+				var photoHTML = '<span>';
+				photoHTML += '<a href="' + photo.link + '">';
+				photoHTML += '<img src="' + photo.media.m.replace('_m', '_s') + '"></a></span>';
+				
+				// ces deux dernières lignes affichent le contenu dans la page web
+				$('h1').text(data.title);
+				$('#photos').append(photoHTML);
+			
+			});
+		
+		});
+    });
+
+</script>
+
+</head>
+
+<body>
+	<h1>Loading...</h1>
+    <div id="photos"></div>
+</body>
+</html>
