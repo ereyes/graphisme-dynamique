@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+canvas { border:1px solid gray;}
+</style>
+
+<script>
+
+var canvas;
+var context;
+
+window.onload = function() {
+	canvas = document.getElementById('monCanvas');
+	context = canvas.getContext('2d');
+	
+	// faire appel à une autre fonction
+	setTimeout('animer()', 10);
+
+}
+
+var x = 50;
+var y = 50;
+var rayon = 30;
+var directionX = 1;
+var directionY = -1;
+var vitesse = 5;
+
+function animer() {
+
+	context.beginPath();
+	context.clearRect(0,0,canvas.width,canvas.height);
+	context.arc(x,y,rayon,0,2*Math.PI);
+	//context.fillStyle = "orange";
+	context.fill();
+	
+	x += vitesse * directionX;
+	y += vitesse * directionY;
+	
+	if (x > canvas.width-rayon || x < rayon) {
+		directionX = -directionX;
+		context.fillStyle ='rgba('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+',0.8)';
+		
+	}
+
+	if (y > canvas.height-rayon || y < rayon) {
+		directionY = -directionY;
+		context.fillStyle ='rgba('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+',0.8)';
+		
+	}
+	
+	setTimeout('animer()', 10);
+}
+
+
+</script>
+</head>
+
+<body>
+<canvas id="monCanvas" width="900" height="400"></canvas>
+</body>
+</html>
