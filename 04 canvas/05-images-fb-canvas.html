@@ -1,0 +1,57 @@
+<html>
+<head>
+  <style>
+  
+  img { display:none; }
+  canvas { border:1px solid gray;}
+  
+  </style>
+  <script src="jquery-2.0.3.min.js"></script>
+  
+  <script type="text/javascript">
+  
+	var compter = [];
+
+	$(document).ready(function() {
+
+    var canvas = document.getElementById('canv');
+    var context = canvas.getContext('2d');
+	
+	context.translate(canvas.width/2, canvas.height/2);
+	
+	
+      for (i=0;i<document.images.length;i++){
+		//context.globalAlpha = 0.1;
+        
+		context.rotate((2*Math.PI) / i);
+		context.drawImage(document.images[i], 20,20, 50,50);
+      }
+	  
+  	});
+	
+	$.getJSON('mesAmis-min.txt', function(data) {
+		
+		$.each(data.data, function(i, ami){		
+			
+			compter[i] = '<img src="';
+			compter[i] += 'http://graph.facebook.com/' + ami.id + '/picture?type=large" />';
+			
+			
+			$('h1').text('Total : ' + compter.length)
+			$('#content').append(compter[i]);
+		
+		});
+	
+	
+	});
+	
+
+  
+  </script>
+</head>
+<body>
+  <canvas id="canv" width="1000" height="500"></canvas>
+  <h1>Test</h1>
+  <div id="content"></div>
+</body>
+</html>
