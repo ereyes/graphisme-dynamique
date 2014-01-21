@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+html, body { margin:0px; }
+canvas { display:block; }
+</style>
+<script>
+window.onload = function(){
+	var canvas = document.getElementById('monCanvas'),
+		context = canvas.getContext('2d'),
+		width = canvas.width = window.innerWidth,
+		height = canvas.height = window.innerHeight;
+	
+	//context.fillStyle = 'rgba(0,0,180,0.8)';
+	//context.fillRect(0,0,width,height);
+	
+	for(var lignes = 0; lignes < 50; lignes++){
+		//context.beginPath();
+		//context.moveTo(Math.random()*width, Math.random()*height);
+		context.strokeStyle = 'rgba('+ Math.floor(Math.random()*255) +','+ Math.floor(Math.random()*255) +','+ Math.floor(Math.random()*255) +',0.999)';
+		context.bezierCurveTo(Math.random()*width, Math.random()*height,Math.random()*width, Math.random()*height,Math.random()*width, Math.random()*height);
+		
+	}
+	
+	context.stroke();
+	
+}
+</script>
+</head>
+
+<body>
+<canvas id="monCanvas"></canvas>
+</body>
+</html>
