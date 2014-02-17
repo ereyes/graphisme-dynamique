@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="18" type="file" uuid="bbf5b714-3e32-4244-8329-9d3f1a7bcda1">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="wiggle1">
+        <node name="color1" position="9.00,5.00" prototype="color.color"/>
+        <node name="colorize1" position="6.00,7.00" prototype="corevector.colorize">
+            <port name="stroke" type="color" value="#0000002d"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="hsb_color1" position="12.00,3.00" prototype="color.hsb_color">
+            <port name="hue" type="float" value="130.0"/>
+            <port name="saturation" type="float" value="268.0"/>
+            <port name="brightness" type="float" value="185.0"/>
+            <port name="alpha" type="float" value="65.0"/>
+            <port name="range" type="float" value="264.0"/>
+        </node>
+        <node name="polygon1" position="4.00,5.00" prototype="corevector.polygon">
+            <port name="sides" type="int" value="44"/>
+            <port name="align" type="boolean" value="true"/>
+        </node>
+        <node name="random_numbers1" position="8.00,3.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="60"/>
+            <port name="start" type="float" value="-38.0"/>
+            <port name="end" type="float" value="73.0"/>
+            <port name="seed" type="int" value="40"/>
+        </node>
+        <node name="scatter1" position="3.00,3.00" prototype="corevector.scatter">
+            <port name="amount" type="int" value="13"/>
+            <port name="seed" type="int" value="8"/>
+        </node>
+        <node name="textpath1" position="6.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="paris"/>
+            <port name="font_size" type="float" value="89.0"/>
+            <port name="position" type="point" value="9.00,90.00"/>
+        </node>
+        <node name="wiggle1" position="8.00,9.00" prototype="corevector.wiggle">
+            <port name="scope" type="string" value="contours"/>
+            <port name="seed" type="int" value="63"/>
+        </node>
+        <conn input="scatter1.shape" output="textpath1"/>
+        <conn input="polygon1.position" output="scatter1"/>
+        <conn input="wiggle1.offset" output="scatter1"/>
+        <conn input="colorize1.shape" output="polygon1"/>
+        <conn input="wiggle1.shape" output="colorize1"/>
+        <conn input="polygon1.radius" output="random_numbers1"/>
+        <conn input="colorize1.fill" output="color1"/>
+        <conn input="color1.color" output="hsb_color1"/>
+        <conn input="hsb_color1.hue" output="random_numbers1"/>
+    </node>
+</ndbx>
