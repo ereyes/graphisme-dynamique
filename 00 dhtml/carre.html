@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+
+#carre {
+	width:200px;
+	height:200px;
+	border:2px gray solid;
+	background-color:white;
+	position:absolute;
+	left:0%; top:0%; right:0%; bottom:0%;
+	margin:auto;
+}
+
+</style>
+
+<script>
+
+var process;
+
+function demarrer(){
+	process = setInterval('animer()', 100);
+}
+
+function animer(){
+	
+	var couleur = ['orange', 'lime', 'brown', 'beige'];
+	
+	var couleurs = couleur[Math.floor(Math.random()*couleur.length)];
+	
+	document.getElementById('carre').style.backgroundColor = couleurs;
+	
+}
+
+function arreter(){
+	clearInterval(process);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="carre" onMouseOver="demarrer();" onMouseOut="arreter();"></div>
+
+</body>
+</html>
