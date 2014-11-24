@@ -1,0 +1,21 @@
+startshape ctt_layout_start
+
+// This test requires a ctt_text file to function - it is meant to be included in fontmap files, not run on its own
+
+rule ctt_layout_start .0000001 {
+	ctt_layout_do {}
+}
+
+rule ctt_object .0000001 { tag {} }
+
+rule ctt_layout .0000001 { ctt_layout_do {} }
+
+rule ctt_layout_do .0000001 { // serpinski5x5
+	5 * [ x +1 ] ctt_layout [ z -1 x -2 y +2 s 0.2 ]
+	5 * [ x +1 ] ctt_layout [ z -1 x -2 y +1 s 0.2 ]
+	2 * [ x +1 ] ctt_layout [ z -1 x -2 y  0 s 0.2 ]
+	2 * [ x +1 ] ctt_layout [ z -1 x +1 y  0 s 0.2 ]
+	5 * [ x +1 ] ctt_layout [ z -1 x -2 y -1 s 0.2 ]
+	5 * [ x +1 ] ctt_layout [ z -1 x -2 y -2 s 0.2 ]
+	ctt_object []
+}

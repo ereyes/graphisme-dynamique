@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color:#eee;
+		}
+		canvas {
+			border:1px solid gray;
+		}
+	</style>
+	<script>
+	
+		var canvas;
+		var context;
+		
+		window.onload = function() {
+			canvas = document.getElementById("myCanvas");
+			context = canvas.getContext("2d");
+			
+			setTimeout('animer()', 10);
+			
+		}
+		
+		var x = 100;
+		var y = 50;
+		var rayon = 30;
+		var angDeb = 0;
+		var angFin = 2 * Math.PI;
+		
+		var directionY = 1;
+		var directionX = -1;
+		var vitesse = 5.0;
+		
+		function animer() {
+			
+			var couleurs = ['yellow', 'pink', 'blue', 'green', 'purple', 'orange', 'black', 'dargreen', 'red', 'brown'];
+			var couleur = couleurs[randomFromTo(0, couleurs.length)];
+			
+			context.beginPath();
+			context.arc(x, y, rayon, angDeb, angFin);
+			context.clearRect(0, 0, canvas.width, canvas.height);
+			context.fill();
+			
+			y += directionY * vitesse;
+			
+			if ( (y > canvas.height-rayon) || (y < rayon) ) {
+				directionY = -directionY;
+				context.fillStyle = couleur;
+			}
+
+			x += directionX * vitesse;
+			
+			if ( (x > canvas.width-rayon) || (x < rayon) ) {
+				directionX = -directionX;
+				context.fillStyle = couleur;
+			}
+			
+
+			setTimeout('animer()', 10);
+		}
+
+		function randomFromTo(from, to) {
+	  		return Math.floor(Math.random() * (to - from + 1) + from);
+		}
+		
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" width="600" height="400"></canvas>
+</body>
+</html>

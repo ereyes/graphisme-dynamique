@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mes amis Facebook</title>
+<style>
+.carre { width:20px; height:20px; float:left; margin:3px; border:1px solid gray; }
+body { margin:100px; }
+</style>
+<script src="jquery-2.0.3.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	
+	// une variable contenant un tableau vide
+	var compter = [ ];
+	
+	$.getJSON('friends.txt', function(donnee){
+	
+		$.each(donnee.data, function(num, friend) {
+			
+			// astuce pour randomiser les couleurs du modèles RVB
+			var couleurs = 'rgb(' + 
+				(Math.floor(Math.random()*256)) + ',' + 
+				(Math.floor(Math.random()*256)) + ',' +
+				(Math.floor(Math.random()*256)) + ')';
+			
+			// on passe la variable de boucle au tableau
+			compter[num] = '<a href="';
+			compter[num] += 'http://facebook.com/' + friend.id + '">';
+			compter[num] += '<div class="carre" style="background-color:'+ couleurs +';"></div></a>';
+			
+			// on affcihe la variable du tableau dans la page
+			
+			$('#contenu').append(compter[num]);
+			$('h1').text('Vous avez ' + compter.length + ' amis');
+		
+		});
+		
+	});
+
+});
+
+</script>
+</head>
+
+<body>
+	<h1></h1>
+	<div id="contenu"></div>
+</body>
+</html>

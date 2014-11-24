@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+	Canvas: placing an image
+-->
+
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color:#eee;
+			}
+			canvas {
+				border:1px solid gray;
+			}
+			#texto {
+				font-size: 120%;
+				font-family:Arial;
+				font-weight:bold;
+			}
+		</style>
+		<script language="JavaScript" type="text/javascript">
+		
+		var canvas;
+		var context;
+		var simpsons = new Image();
+		simpsons.src = "simpsons.jpg";
+		
+		var animationFrames = [10, 12, 17, 22, 26, 28, 39, 33];
+		
+		// Communicating with another array and printing HTML
+		var names = ['wittgenstein', 'sartre', 'plato', 'nietzsche', 'marx', 'barthes', 'foucault', 'leibniz'];
+		var frameIndex = 0;
+		
+		var x = 100;
+		var dx = 1;
+		
+		window.onload = function() {
+			canvas = document.getElementById("myCanvas");
+			context = canvas.getContext("2d");
+			drawScreen();
+		}
+		
+		function drawScreen() {
+
+			/*
+			 drawImage() parameters
+			 image, sx, sy, sw, sh, dx, dy, width, height
+			 
+			 copying and animating a part of an image with array then animating the viewing tile
+			 
+			*/
+			context.fillStyle = "gray";
+			context.fillRect(0, 0, canvas.width, canvas.height);
+			
+			var sourceX = Math.floor(animationFrames[frameIndex] % 8) * 48;
+			var sourceY = Math.floor(animationFrames[frameIndex] / 8) * 48;
+			
+			document.getElementById("texto").innerHTML = "Hello, " + names[frameIndex];
+			
+			context.drawImage(simpsons, sourceX, sourceY, 50, 50, x, 100, 200, 200);
+			
+			x += dx*100;
+			
+			if ((x > canvas.width-200) || (x < 0)) {
+				dx = -dx;
+			}
+			
+			frameIndex++;
+			
+			if (frameIndex == animationFrames.length) {
+				frameIndex = 0;
+			}
+			
+			setTimeout(drawScreen, 1000);
+		}
+		
+		
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="600" height="600"></canvas>
+		<div id="texto"></div>
+	</body>
+</html>

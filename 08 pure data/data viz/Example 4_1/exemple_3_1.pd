@@ -1,0 +1,100 @@
+#N canvas 146 32 875 764 10;
+#N canvas 244 412 558 302 curlimport 0;
+#X obj 26 51 getdir;
+#X obj 26 26 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 119 91 prepend set;
+#X msg 119 113 ./Users/mac/Alexini/ITESM 8º Semestre/Cultural Inovation/PureData/Example
+4_1/curl_3.sh /Users/mac/Alexini/ITESM 8º Semestre/Cultural Inovation/PureData/Example
+4_1;
+#X obj 26 173 shell;
+#X text 73 173 l'objet shell fonctionne avec linux et OSX \, pour windows
+utiliser popen \, mais en bref là \, sur ces exemples vous êtes foutu
+;
+#X text 74 22 getdir permet de trouver le chemin relatif au dossier
+;
+#X text 73 37 ici on le fait hériter à la fois pour trouver le script
+curl \, et pour la variable \$1 du message qui suit;
+#X msg 26 74 .\$1/curl_3.sh \$1;
+#X obj 26 -8 inlet;
+#X connect 0 0 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 8 0 2 0;
+#X connect 8 0 4 0;
+#X connect 9 0 0 0;
+#X restore 315 5 pd curlimport;
+#X obj 198 158 msgfile;
+#X obj 198 31 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 215 117 flush;
+#X obj 225 228 f;
+#X obj 258 228 + 1;
+#X msg 249 158 0;
+#X obj 198 404 s pd-receveur;
+#N canvas 877 331 518 453 receveur 0;
+#X restore 62 403 pd receveur;
+#X obj 198 226 l2s;
+#X obj 491 49 gemhead;
+#X obj 491 85 s GemHeadGen;
+#X msg 198 360 obj 0 0 a_word \$1 \$2 \$3 \$4;
+#X text 143 405 <------;
+#X text 372 355 on définit 4 variables qui vont être implémentées
+par le constructeur // au niveau C++ ce sont au niveau de al class
+qui va être instancié les possibilités d'écriture publique;
+#X text 372 400 la première variable est l'ID;
+#X text 375 415 deuxième le symbol repris du texte;
+#X text 376 430 troisième position en X ici qui ets en mode random
+;
+#X text 376 445 quatrième position Y qui est ici en random;
+#X text 579 43 tête de lecture de Gem qui est relié aux instances
+de la class a_word avec le pointeur GemHeadGen;
+#X text 585 75 la logique est simple;
+#X text 749 103 [r NomDuPointeur];
+#X text 595 103 [s NomDuPointeur];
+#X text 702 105 ------->;
+#X obj 198 263 pack s f f f;
+#X obj 198 186 t a b b b;
+#X obj 295 201 random 80;
+#X obj 339 236 expr ($f1/10)-4;
+#X obj 441 237 expr ($f1/10)-4;
+#X obj 440 207 random 80;
+#X obj 198 67 t b b b b b;
+#X msg 261 129 \; pd-receveur clear \;;
+#X obj 203 -70 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 195 -12 t b b;
+#X obj 197 10 delay 1000;
+#X obj 200 -50 metro 2000;
+#X obj 3 3 a_gemwin;
+#X msg 232 93 read lim.txt cr;
+#X connect 1 0 25 0;
+#X connect 2 0 30 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 5 0 4 1;
+#X connect 5 0 24 1;
+#X connect 6 0 4 1;
+#X connect 9 0 24 0;
+#X connect 10 0 11 0;
+#X connect 12 0 7 0;
+#X connect 24 0 12 0;
+#X connect 25 0 9 0;
+#X connect 25 1 4 0;
+#X connect 25 2 26 0;
+#X connect 25 3 29 0;
+#X connect 26 0 27 0;
+#X connect 27 0 24 2;
+#X connect 28 0 24 3;
+#X connect 29 0 28 0;
+#X connect 30 0 1 0;
+#X connect 30 1 3 0;
+#X connect 30 2 37 0;
+#X connect 30 3 6 0;
+#X connect 30 4 31 0;
+#X connect 32 0 35 0;
+#X connect 33 0 34 0;
+#X connect 33 1 0 0;
+#X connect 34 0 30 0;
+#X connect 35 0 33 0;
+#X connect 37 0 1 0;

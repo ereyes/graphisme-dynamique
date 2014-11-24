@@ -1,0 +1,101 @@
+startshape ctt_layout_start
+include ctt_test_text.cfdg
+include ctt_fontmap_default.cfdg
+
+// from the URL : http://generator.digitalartimag.org/services/api.php?oeu=37&cpt=158349&nb=1
+
+// Poème généré : avoir toujours cru au pouvoir secret des mots
+
+// Chaque mot est une rule où chaque lettre a sa ligne
+
+// Mot : avoir
+rule tag {
+	A [ sat .8 hue 554 x   0 ]
+	V [ sat .8 hue 554 x  1 ]
+	O [ sat .8 hue 554 x  2 ]
+	I [ sat .8 hue 554 x  3 ]
+	R [ sat .8 hue 554 x  4 ]
+	E [ sat .8 hue 554 x   6 ]
+	T [ sat .8 hue 554 x  7 ]
+	R [ sat .8 hue 554 x  8 ]
+	E [ sat .8 hue 554 x  9 ]
+	A [ sat .8 hue 554 x   11 ]
+	V [ sat .8 hue 554 x  12 ]
+	O [ sat .8 hue 554 x  13 ]
+	I [ sat .8 hue 554 x  14 ]
+	R [ sat .8 hue 554 x  15 ]
+	E [ sat .8 hue 554 x   17 ]
+	T [ sat .8 hue 554 x  18 ]
+	R [ sat .8 hue 554 x  19 ]
+	E [ sat .8 hue 554 x  20 ]
+}
+
+// Mot : toujours
+rule tag {
+	T [ sat .8 hue 254 x  0 ]
+	O [ sat .8 hue 254 x  1 ]
+	U [ sat .8 hue 254 x  2 ]
+	J [ sat .8 hue 254 x  3 ]
+	O [ sat .8 hue 254 x  4 ]
+	U [ sat .8 hue 254 x  5 ]
+	R [ sat .8 hue 254 x  6 ]
+	S [ sat .8 hue 254 x  7 ]
+}
+
+rule tag {
+	C [ sat .8 hue 248 x  0 ]
+	R [ sat .8 hue 248 x  1 ]
+	U [ sat .8 hue 248 x  2 ]
+}
+
+rule tag {
+	A [ sat .8 hue 248 x  0 ]
+	U [ sat .8 hue 248 x  1 ]
+}
+
+
+rule tag {
+	P [ sat .8 hue 254 x  0 ]
+	O [ sat .8 hue 254 x  1 ]
+	U [ sat .8 hue 254 x  2 ]
+	V [ sat .8 hue 254 x  3 ]
+	O [ sat .8 hue 254 x  4 ]
+	I [ sat .8 hue 254 x  5 ]
+	R [ sat .8 hue 254 x  6 ]
+}
+
+
+rule tag {
+	S [ sat .8 hue 254 x  0 ]
+	E [ sat .8 hue 254 x  1 ]
+	C [ sat .8 hue 254 x  2 ]
+	R [ sat .8 hue 254 x  3 ]
+	E [ sat .8 hue 254 x  4 ]
+	T [ sat .8 hue 254 x  5 ]
+}
+
+rule tag {
+	D [ sat .8 hue 248 x  0 ]
+	E [ sat .8 hue 248 x  1 ]
+	S [ sat .8 hue 248 x  2 ]
+}
+
+rule tag {
+	M [ sat .8 hue 248 x  0 ]
+	O [ sat .8 hue 248 x  1 ]
+	T [ sat .8 hue 248 x  2 ]
+	S [ sat .8 hue 248 x  3 ]
+	C [ sat .8 hue 248 x  5 ]
+        H [ sat .8 hue 248 x  6 ]
+        E [ sat .8 hue 248 x  7 ]
+        R [ sat .8 hue 248 x  8 ]
+	M [ sat .8 hue 248 x  10 ]
+	O [ sat .8 hue 248 x  11 ]
+	T [ sat .8 hue 248 x  12 ]
+	S [ sat .8 hue 248 x  13 ]
+	T [ sat .8 hue 248 x  15 ]
+        I [ sat .8 hue 248 x  16 ]
+        F [ sat .8 hue 248 x  17 ]
+        S [ sat .8 hue 248 x  18 ]
+}
+

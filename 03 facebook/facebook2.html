@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mes amis Facebook</title>
+<style>
+.carre { width:20px; height:20px; float:left; margin:3px; border:1px solid gray; }
+body { margin:100px; }
+</style>
+<script src="jquery-2.0.3.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	
+	
+	
+	$.getJSON('friends.txt', function(donnee){
+	
+		$.each(donnee.data, function(num, friend) {
+			
+			
+			
+			// on passe la variable de boucle au tableau
+			var ami = '<a href="';
+			ami += 'http://facebook.com/' + friend.id + '">';
+			ami += '<div class="carre"></div></a>';
+			
+			// on affcihe la variable du tableau dans la page
+			
+			$('#contenu').append(ami);
+			
+		
+		});
+		
+	});
+
+});
+
+</script>
+</head>
+
+<body>
+	<h1></h1>
+	<div id="contenu"></div>
+</body>
+</html>

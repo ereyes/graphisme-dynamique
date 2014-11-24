@@ -1,0 +1,21 @@
+#N canvas 489 229 623 289 10;
+#X obj 133 38 getdir;
+#X obj 133 13 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 78 prepend set;
+#X msg 226 100 ./Applications/puredata/63-annecy-2013/master2/exemple_2/curl.sh
+/Applications/puredata/63-annecy-2013/master2/exemple_2;
+#X obj 133 160 shell;
+#X text 180 160 l'objet shell fonctionne avec linux et OSX \, pour
+windows utiliser popen \, mais en bref là \, sur ces exemples vous
+êtes foutu;
+#X msg 133 61 .\$1/curl.sh \$1;
+#X text 181 9 getdir permet de trouver le chemin relatif au dossier
+;
+#X text 180 24 ici on le fait hériter à la fois pour trouver le script
+curl \, et pour la variable \$1 du message qui suit;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 6 0 2 0;
+#X connect 6 0 4 0;

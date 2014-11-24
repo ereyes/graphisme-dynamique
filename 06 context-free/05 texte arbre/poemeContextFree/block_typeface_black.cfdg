@@ -1,0 +1,532 @@
+// ContextFree Alphabet
+// Suitable for including,
+// coloring or framing.
+//
+// Requires a white background
+// for best results.
+//
+// by Brad Sandman
+// version 1.07
+
+// - Changed 1_BLOCK etc. to conform to CF2.1 (NUM_1_BLOCK)
+// - Fixed weird saturation bug on C_BLOCK
+// - Created black font by changing names to _B and adding b 1 as appropriate:
+//   	Replace: (^(?:CIRCLE|TRIANGLE|SQUARE)(?:.)+{[^b\}]+)(\})
+//   	With:    $1 b 1 $2
+
+startshape alphabet
+
+rule alphabet {
+A_BLOCK_B	{ x 0 y  0   }
+B_BLOCK_B	{ x 1 y  0   }
+C_BLOCK_B	{ x 2 y  0   }
+D_BLOCK_B	{ x 3 y  0   }
+E_BLOCK_B	{ x 4 y  0   }
+F_BLOCK_B	{ x 5 y  0   }
+G_BLOCK_B	{ x 6 y  0   }
+H_BLOCK_B	{ x 0 y -1.2 }
+I_BLOCK_B	{ x 1 y -1.2 }
+J_BLOCK_B	{ x 2 y -1.2 }
+K_BLOCK_B	{ x 3 y -1.2 }
+L_BLOCK_B	{ x 4 y -1.2 }
+M_BLOCK_B	{ x 5 y -1.2 }
+N_BLOCK_B	{ x 6 y -1.2 }
+O_BLOCK_B	{ x 0 y -2.4 }
+P_BLOCK_B	{ x 1 y -2.4 }
+Q_BLOCK_B	{ x 2 y -2.4 }
+R_BLOCK_B	{ x 3 y -2.4 }
+S_BLOCK_B	{ x 4 y -2.4 }
+T_BLOCK_B	{ x 5 y -2.4 }
+U_BLOCK_B	{ x 6 y -2.4 }
+V_BLOCK_B	{ x 0 y -3.6 }
+W_BLOCK_B	{ x 1 y -3.6 }
+X_BLOCK_B	{ x 2 y -3.6 }
+Y_BLOCK_B	{ x 3 y -3.6 }
+Z_BLOCK_B	{ x 4 y -3.6 }
+NUM_1_BLOCK_B	{ x 5 y -3.6 }
+NUM_2_BLOCK_B	{ x 6 y -3.6 }
+NUM_3_BLOCK_B	{ x 0 y -4.8 }
+NUM_4_BLOCK_B	{ x 1 y -4.8 }
+NUM_5_BLOCK_B	{ x 2 y -4.8 }
+NUM_6_BLOCK_B	{ x 3 y -4.8 }
+NUM_7_BLOCK_B	{ x 4 y -4.8 }
+NUM_8_BLOCK_B	{ x 5 y -4.8 }
+NUM_9_BLOCK_B	{ x 6 y -4.8 }
+NUM_0_BLOCK_B	{ x 0 y -6.0 }
+ACUTE_BLOCK_B { x 1 y -6.2 }
+GRAVE_BLOCK_B { x 2 y -6.2 }
+LSQUOTE_BLOCK_B { x 3 y -6 }
+RSQUOTE_BLOCK_B { x 4 y -6 }
+LDQUOTE_BLOCK_B { x 5 y -6 }
+RDQUOTE_BLOCK_B { x 6 y -6 }
+SLASH_BLOCK_B { x 0 y -7.2 }
+BACKSLASH_BLOCK_B { x 1 y -7.2 }
+MINUS_BLOCK_B { x 2 y -7.2 }
+PLUS_BLOCK_B { x 3 y -7.2 }
+MULT_BLOCK_B { x 4 y -7.2 }
+DIV_BLOCK_B { x 5 y -7.2 }
+ASTERISK_BLOCK_B { x 6 y -7.2 }
+EQUALS_BLOCK_B { x 7 y -7.2 }
+QUEST_BLOCK_B { x 7 y 0 }
+EXCLAM_BLOCK_B { x 7 y -1.2 }
+PERIOD_BLOCK_B { x 7 y -3.6 }
+COMMA_BLOCK_B { x 7.5 y -3.6 }
+AT_BLOCK_B { x 7 y -2.4 }
+COLON_BLOCK_B { x 7 y -4.8 }
+SEMICOLON_BLOCK_B { x 7.5 y -4.8 }
+TILDA_BLOCK_B { x 7 y -6.2 }
+}
+
+// Alphabet of Block letters
+
+rule A_BLOCK_B {
+SQUARE { s 0.3 0.6 x -0.2 y -0.2
+	skew 45.5 0  b 1 }
+SQUARE { s 0.3 0.6 x 0.2 y -0.2
+	skew -45.5 0  b 1 }
+TRIANGLE { s 0.44 0.5 x 0 y 0.2  b 1 }
+TRIANGLE	{ s 0.2 0.25 y -0.1 
+	sat -1 b -1 }
+SQUARE { s 0.5 0.2 x 0 y -0.2  b 1 }
+}
+
+rule  B_BLOCK_B {
+SQUARE	{ s 0.5 1 x -0.1  b 1 }
+CIRCLE { s 0.5 0.5 x 0.1 y 0.25   b 1 }
+CIRCLE { s 0.2 x 0 y 0.25
+	sat -1 b -1 }
+CIRCLE { s 0.6 0.6 x 0.1 y -0.2   b 1 }
+CIRCLE { s 0.2 x 0 y -0.2
+	sat -1 b -1 }
+}
+
+rule C_BLOCK_B {
+CIRCLE { s 0.95 1  b 1 }
+CIRCLE { s 0.44 sat -1 b -1 } // added sat -1 to fix weird color bug
+SQUARE { s 0.45 0.25 x .25
+	sat -1 b -1 }
+}
+
+rule D_BLOCK_B {
+SQUARE	{ s 0.45 1 x -0.15  b 1 }
+CIRCLE { s 0.75 1 x 0.05  b 1 }
+CIRCLE { s 0.33 0.5 x -0.05
+	sat -1 b -1 }
+SQUARE { s 0.25 0.8 x -0.2 y 0  b 1 }
+}
+
+rule E_BLOCK_B {
+SQUARE { s 0.25 1 x -0.275  b 1 }
+SQUARE { s 0.8 0.2 y 0.4  b 1 }
+SQUARE { s 0.8 0.2 y -0.4  b 1 }
+SQUARE	{ s 0.5 0.2  b 1 }
+}
+
+rule F_BLOCK_B {
+SQUARE { s 0.25 1 x -0.275  b 1 }
+SQUARE { s 0.8 0.2 y 0.4  b 1 }
+SQUARE	{ s 0.5 0.2  x 0  b 1 }
+}
+
+rule G_BLOCK_B {
+CIRCLE { s 0.95 1  b 1 }
+CIRCLE { s 0.45
+	sat -1 b -1 }
+SQUARE { s 0.45 0.1 x .25 y 0.1
+	sat -1 b -1 }
+SQUARE { s 0.45 0.19 x .2 y -0.05  b 1 }
+}
+
+rule H_BLOCK_B {
+SQUARE { s 0.25 1 x -0.25  b 1 }
+SQUARE { s 0.25 1 x 0.25  b 1 }
+SQUARE { s 0.75 0.25  b 1 }
+}
+
+rule I_BLOCK_B {
+SQUARE { s 0.7 0.2 y 0.4  b 1 }
+SQUARE { s 0.7 0.2 y -0.4  b 1 }
+SQUARE { s 0.25 1  b 1 }
+}
+
+rule J_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y -0.2   b 1 }
+CIRCLE { s 0.3 0.25 x 0 y -0.15
+	sat -1 b -1 }
+SQUARE { s 0.75 0.5 x -0.1 y 0.1
+	sat -1 b -1 }
+SQUARE { s 0.25 .7 x 0.275 y 0.15  b 1 }
+}
+
+rule K_BLOCK_B {
+SQUARE { s 0.3 1 x -0.3  b 1 }
+SQUARE { s 0.25 0.5 x 0.1 y 0.24
+	skew 45 0  b 1 }
+SQUARE { s 0.3 0.5 x 0.1 y -0.24
+	skew -45 0  b 1 }
+}
+
+rule L_BLOCK_B {
+SQUARE { s 0.25 1 x -0.28  b 1 }
+SQUARE { s 0.8 0.2 y -0.4  b 1 }
+}
+
+rule M_BLOCK_B {
+SQUARE { s 0.25 1 x -0.31  b 1 }
+SQUARE { s 0.25 1 x 0.31  b 1 }
+SQUARE { s 0.2 0.5 x -0.16 y 0.25
+	skew -40 0  b 1 }
+SQUARE { s 0.2 0.5 x 0.16 y 0.25
+	skew 40 0  b 1 }
+TRIANGLE { s 0.5 0.6 x 0 y -0.15
+	rotate 180  b 1 }
+}
+
+rule N_BLOCK_B {
+SQUARE { s 0.25 1 x -0.25  b 1 }
+SQUARE { s 0.25 1 x 0.25  b 1 }
+SQUARE { s 0.2 1 skew -60 0  b 1 }
+}
+
+rule O_BLOCK_B {
+CIRCLE { s 0.95 1  b 1 }
+CIRCLE { s 0.4
+	sat -1 b -1 }
+}
+
+rule  P_BLOCK_B {
+SQUARE	{ s 0.25 1 x -0.2  b 1 }
+SQUARE	{ s 0.4 0.6 x -0.1 y 0.2  b 1 }
+CIRCLE { s 0.5 0.6 x 0.1 y 0.2  b 1 }
+CIRCLE { s 0.2 x 0.05 y 0.2 
+	sat -1 b -1 }
+}
+
+rule Q_BLOCK_B {
+CIRCLE { s 0.95 1  b 1 }
+CIRCLE { s 0.45 
+	sat -1 b -1 }
+SQUARE { s 0.2 0.5 x 0.2 y -0.25
+	skew -60 0  b 1 }
+}
+
+rule  R_BLOCK_B {
+SQUARE	{ s 0.25 1 x -0.2  b 1 }
+SQUARE	{ s 0.4 0.5 x -0.1 y 0.25  b 1 }
+CIRCLE { s 0.5 0.6 x 0.1 y 0.2  b 1 }
+CIRCLE { s 0.2 x 0 y 0.2
+	sat -1 b -1 }
+SQUARE { s 0.3 0.5 x 0.1 y -0.25
+	skew -45 0  b 1 }
+}
+
+rule  S_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y 0.2   b 1 }
+CIRCLE { s 0.2 0.2 x 0 y 0.2
+	sat -1 b -1 }
+CIRCLE { s 0.8 0.6 x 0 y -0.2   b 1 }
+CIRCLE { s 0.25 0.2 x 0 y -0.2
+	sat -1 b -1 }
+SQUARE{ s 0.4 0.25 x 0.2 y 0.1
+	sat -1 b -1 }
+SQUARE{ s 0.4 0.25 x -0.2 y -0.1
+	sat -1 b -1 }
+CIRCLE { s 0.45 0.15 x -0.125 y -0.0
+	rotate -17  b 1 }
+CIRCLE { s 0.45 0.15 x 0.125 y -0.0
+	rotate -17  b 1 }
+}
+
+rule T_BLOCK_B {
+SQUARE { s 0.25 .95 x 0 y -0.02  b 1 }
+SQUARE { s 0.8 0.2 y 0.4  b 1 }
+}
+
+rule U_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y -0.2   b 1 }
+CIRCLE { s 0.3 0.25 x 0 y -0.15
+	sat -1 b -1 }
+SQUARE { s 0.33 0.5 x 0 y 0.1
+	sat -1 b -1 }
+SQUARE { s 0.25 .7 x -0.275 y 0.15  b 1 }
+SQUARE { s 0.25 .7 x 0.275 y 0.15  b 1 }
+}
+
+rule V_BLOCK_B {
+SQUARE { s 0.3 0.6 x -0.2 y 0.2
+	skew -45.5 0  b 1 }
+SQUARE { s 0.3 0.6 x 0.2 y 0.2
+	skew 45.5 0  b 1 }
+TRIANGLE { s 0.44 0.5 x 0 y -0.2
+	rotate 180  b 1 }
+}
+
+rule W_BLOCK_B {
+SQUARE { s 0.25 1 x -0.31  b 1 }
+SQUARE { s 0.25 1 x 0.31  b 1 }
+SQUARE { s 0.2 0.5 x -0.17 y -0.25
+	skew 42 0  b 1 }
+SQUARE { s 0.2 0.5 x 0.17 y -0.25
+	skew -42 0  b 1 }
+TRIANGLE { s 0.4 0.4 x 0 y 0.1  b 1 }
+}
+
+rule X_BLOCK_B {
+SQUARE { s 0.3 1 skew -60 0  b 1 }
+SQUARE { s 0.3 1 skew 60 0  b 1 }
+}
+
+rule Y_BLOCK_B {
+SQUARE { s 0.3 0.5 x -0.15 y 0.24
+	skew -45 0  b 1 }
+SQUARE { s 0.3 0.5 x 0.15 y 0.24
+	skew 45 0  b 1 }
+SQUARE { s 0.3 0.5 x 0 y -0.24  b 1 }
+}
+
+rule Z_BLOCK_B {
+SQUARE { s 0.8 0.25 y 0.37  b 1 }
+SQUARE { s 0.8 0.25 y -0.37  b 1 }
+SQUARE { s 0.3 0.5 skew 59.2 0  b 1 }
+}
+
+
+rule NUM_1_BLOCK_B {
+SQUARE { s 0.3 1  b 1 }
+TRIANGLE { s 0.25 x -0.15 y 0.3
+	rotate 0  b 1 }
+}
+
+rule  NUM_2_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y 0.2   b 1 }
+CIRCLE { s 0.25 0.2 x 0 y 0.15
+	sat -1 b -1 }
+SQUARE{ s 0.4 0.1 x -0.23 y 0.15
+	sat -1 b -1 }
+SQUARE { s 0.25 0.25 x -0.185 y -0.13
+	skew 36 0  b 1 }
+TRIANGLE { s 0.25 0.53 x -0.24 y 0.065
+	rotate -88
+	sat -1 b -1 }
+CIRCLE { s 0.2 0.3  x -0.265 y -0.14
+	rotate -55  b 1 }
+SQUARE { s 0.3 0.2 x -0.25 y -0.27  b 1 }
+SQUARE{ s 0.3 0.1 x 0 y -0.08
+	rotate 20  b 1 }
+SQUARE { s 0.8 0.25 y -0.38  b 1 }
+}
+
+rule  NUM_3_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y 0.2   b 1 }
+CIRCLE { s 0.25 0.2 x 0 y 0.2
+	sat -1 b -1 }
+CIRCLE { s 0.8 0.6 x 0 y -0.2   b 1 }
+CIRCLE { s 0.25 0.2 x 0 y -0.2
+	sat -1 b -1 }
+SQUARE{ s 0.36 0.425 x -0.22 y 0
+	sat -1 b -1 }
+}
+
+rule NUM_4_BLOCK_B {
+SQUARE { s 0.2 0.99 x 0.175 y 0  b 1 }
+SQUARE { s 0.25 0.6 x -0.08 y 0.195
+	skew 60 0  b 1 }
+SQUARE { s 0.75 0.2 x -0.05 y -0.2  b 1 }
+}
+
+rule  NUM_5_BLOCK_B {
+CIRCLE { s 0.8 0.7 x 0 y -0.13  b 1 }
+CIRCLE { s 0.3 0.3 x 0 y -0.1
+	sat -1 b -1 }
+SQUARE { s 0.2 0.5 x -0.27 y 0.21  b 1 }
+SQUARE { s 0.7 0.2 x -0.02 y 0.38  b 1 }
+SQUARE{ s 0.5 0.2 x -0.2 y -0.1
+	sat -1 b -1 }
+}
+
+rule  NUM_6_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y 0.2   b 1 }
+CIRCLE { s 0.25 0.4 x 0 y 0.1
+	sat -1 b -1 }
+SQUARE{ s 0.45 0.4 x 0.2 y 0
+	sat -1 b -1 }
+CIRCLE { s 0.3 0.7 x -0.3 y 0  b 1 }
+CIRCLE { s 0.8 0.6 x 0 y -0.2   b 1 }
+CIRCLE { s 0.25 0.25 x 0 y -0.2
+	sat -1 b -1 }
+}
+
+rule NUM_7_BLOCK_B {
+SQUARE { s 0.8 0.25 y 0.38  b 1 }
+SQUARE { s 0.3 0.75 x 0.03 y -0.12
+	skew 55 0  b 1 }
+}
+
+rule  NUM_8_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y 0.2   b 1 }
+CIRCLE { s 0.8 0.6 x 0 y -0.2   b 1 }
+CIRCLE { s 0.2 0.2 x 0 y 0.2
+	sat -1 b -1 }
+CIRCLE { s 0.25 0.2 x 0 y -0.2
+	sat -1 b -1 }
+}
+
+rule  NUM_9_BLOCK_B {
+CIRCLE { s 0.8 0.6 x 0 y 0.2   b 1 }
+CIRCLE { s 0.25 0.2 x 0 y 0.2
+	sat -1 b -1 }
+SQUARE { s 0.25 0.54 x 0 y -0.22
+	skew 60 0  b 1 }
+}
+
+rule NUM_0_BLOCK_B {
+CIRCLE { s 0.8 1  b 1 }
+CIRCLE { s 0.4
+	sat -1 b -1 }
+SQUARE { s 0.1 0.5 x 0 y 0
+	skew 70 0  b 1 }
+}
+
+rule PERIOD_BLOCK_B {
+CIRCLE { x -0.25 y -0.38 s 0.2  b 1 }
+}
+
+rule COMMA_BLOCK_B {
+CIRCLE { x -0.25 y -0.38 s 0.18  b 1 }
+TRIANGLE { x -0.24 y -0.47 s 0.07 0.15
+	rotate 155  b 1 }
+}
+
+rule SLASH_BLOCK_B {
+SQUARE { s 0.2 0.9 x 0 y 0
+	skew 60 0  b 1 }
+}
+
+rule BACKSLASH_BLOCK_B {
+SQUARE { s 0.2 0.9 x 0 y 0
+	skew -60 0  b 1 }
+}
+
+rule COLON_BLOCK_B {
+CIRCLE { x -0.25 y -0.1 s 0.15  b 1 }
+CIRCLE { x -0.25 y -0.4 s 0.15  b 1 }
+}
+
+rule SEMICOLON_BLOCK_B {
+CIRCLE { x -0.25 y -0.1 s 0.15  b 1 }
+CIRCLE { x -0.25 y -0.4 s 0.14  b 1 }
+TRIANGLE { x -0.25 y -0.47 s 0.07 0.15
+	rotate 155  b 1 }
+}
+
+rule RDQUOTE_BLOCK_B {
+CIRCLE { x -0.25 y 0.3 s 0.14  b 1 }
+TRIANGLE { x -0.25 y 0.23 s 0.07 0.15
+	rotate 155  b 1 }
+CIRCLE { x -0.07 y 0.3 s 0.14  b 1 }
+TRIANGLE { x -0.07 y 0.23 s 0.07 0.15
+	rotate 155  b 1 }
+}
+
+rule RSQUOTE_BLOCK_B {
+CIRCLE { x -0.25 y 0.3 s 0.14  b 1 }
+TRIANGLE { x -0.25 y 0.23 s 0.07 0.15
+	rotate 155  b 1 }
+}
+
+rule LDQUOTE_BLOCK_B {
+CIRCLE { x 0.25 y 0.23 s 0.14  b 1 }
+TRIANGLE { x 0.25 y 0.3 s 0.07 0.15
+	rotate -25  b 1 }
+CIRCLE { x 0.07 y 0.23 s 0.14  b 1 }
+TRIANGLE { x 0.07 y 0.3 s 0.07 0.15
+	rotate -25  b 1 }
+}
+
+rule LSQUOTE_BLOCK_B {
+CIRCLE { x 0.25 y 0.23 s 0.14  b 1 }
+TRIANGLE { x 0.25 y 0.3 s 0.07 0.15
+	rotate -25  b 1 }
+}
+
+rule MINUS_BLOCK_B {
+SQUARE { s 0.5 0.15 x 0 y 0  b 1 }
+}
+
+rule PLUS_BLOCK_B {
+MINUS_BLOCK_B { }
+SQUARE { s 0.15 0.5 x 0 y 0  b 1 }
+}
+
+rule MULT_BLOCK_B {
+PLUS_BLOCK_B { rotate 45 }
+}
+
+rule DIV_BLOCK_B {
+MINUS_BLOCK_B {}
+CIRCLE { x 0 y 0.2 s 0.15  b 1 }
+CIRCLE { x 0 y -0.2 s 0.15  b 1 }
+}
+
+rule ASTERISK_BLOCK_B {
+SQUARE { s 0.1 0.5  b 1 }
+SQUARE { s 0.1 0.5 rotate 60  b 1 }
+SQUARE { s 0.1 0.5 rotate -60  b 1 }
+}
+
+rule EQUALS_BLOCK_B {
+SQUARE { s 0.5 0.15 x 0 y 0.125  b 1 }
+SQUARE { s 0.5 0.15 x 0 y -0.125  b 1 }
+}
+
+rule EXCLAM_BLOCK_B {
+TRIANGLE { s 0.07 0.66 x -0.0725 y 0.24 
+	rotate 180 skew -30 0  b 1 }
+TRIANGLE { s 0.07 0.66 x 0.0725 y 0.24 
+	rotate 180 skew 30 0  b 1 }
+SQUARE { s 0.1 0.6 y 0.13  b 1 }
+CIRCLE { s 0.2 y -0.36  b 1 }
+}
+
+rule QUEST_BLOCK_B {
+CIRCLE { s 0.8 0.5 x 0 y 0.2   b 1 }
+CIRCLE { s 0.25 0.2 x 0 y 0.2
+	sat -1 b -1 }
+SQUARE{ s 0.36 0.425 x -0.22 y 0
+	sat -1 b -1 }
+SQUARE { s 0.15 0.3 y -0.05  b 1 }
+TRIANGLE { s 0.2 0.1 x -0.07 y .07
+	rotate 45
+	sat -1 b -1 }
+CIRCLE { s 0.2 y -0.36  b 1 }
+}
+
+rule ACUTE_BLOCK_B {
+TRIANGLE { x 0 y 0.5 s 0.05 0.2
+	rotate 125  b 1 }
+}
+
+rule GRAVE_BLOCK_B {
+TRIANGLE { x 0 y 0.5 s 0.05 0.2
+	rotate -125  b 1 }
+}
+
+rule _hump_BLOCK_B {
+CIRCLE {  b 1 }
+_hump_BLOCK_B { s 0.993 x 0.06 y 0.005 rotate 0.6667 }
+}
+
+rule TILDA_BLOCK_B {
+_hump_BLOCK_B { s 0.05 y 0.38 rotate -45 }
+_hump_BLOCK_B { s 0.05 y 0.38 rotate 135 }
+}
+
+rule _spiral_BLOCK_B {
+CIRCLE {}
+_spiral_BLOCK_B { s 0.985 x -0.1 y -0.1
+	r -5 }
+}
+rule AT_BLOCK_B {
+_spiral_BLOCK_B {  x 0.14 y -0.34 s 0.33 
+	r -45 b 1 }
+}

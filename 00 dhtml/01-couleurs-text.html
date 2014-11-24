@@ -1,0 +1,102 @@
+<html>
+
+<head>
+	<title>00-div</title>
+    <style>
+		/* style du document complet */
+    	body { background-color:gray; }
+		
+		/* style de la div nommée 'texte' */
+		#texte { 
+			width:500px; height:100px;
+			color:white; font-family:arial; font-size:400%; text-align:center; 
+			position:absolute; left:0%; top:0%; right:0%; bottom:0%; margin:auto;
+			border:solid 1px white; 
+		}
+    </style>
+    <script>
+		
+		// déclaration de deux variables
+		
+		var animation;
+		var nombre = 0;
+		
+		// Quatre fonctions : démarrer, arreter, compter, recommencer
+		
+		function demarrer(){
+			// cette condition évite d'accéler l'animation si on appuit plusieurs fois sur le bouton.
+			if (animation==null) {
+				animation = setInterval('compter()', 500);
+			}
+		}
+		
+		function arreter(){
+			window.clearInterval(animation);
+			// on remet à null l'animation pour pouvoir recommencer à l'endroit où a été arreté
+			animation = null;
+		}
+		
+		function compter(){
+
+			// nombre++ équivaut à nombre = nombre + 1;		
+			nombre++;
+			
+			// cette variable définit un tableau
+			var nous = [ 'Superman', 'Batman', 'Flash', 'Wonder Woman', 'Green Lantern' ];
+			
+			// cette varibale nous sert à prendre aléatoirement un membre du tableau
+			var nom = nous[ Math.floor(Math.random() * nombre % nous.length ) ];
+			
+			// cette partie imprime le texte dans la div 'texte'
+			document.getElementById('texte').innerHTML = nom;
+			
+			// conditions pour changer un style si un nom arrive
+			if(nombre > 20){
+				document.body.style.backgroundColor = 'brown';
+			}
+
+			if(nombre > 40){
+				document.body.style.backgroundColor = 'rgba(255,0,255,0.7)';
+			}	
+
+			if(nom == 'Superman'){
+				document.body.style.backgroundColor = 'darkblue';
+			}
+
+			if(nom == 'Batman'){
+				document.body.style.backgroundColor = 'black';
+			}
+			
+			if(nom == 'Flash'){
+				document.body.style.backgroundColor = 'darkred';
+			}
+			
+			if(nom == 'Wonder Woman'){
+				document.body.style.backgroundColor = 'orange';
+			}
+			
+			if(nom == 'Green Lantern'){
+				document.body.style.backgroundColor = 'darkgreen';
+			}
+			
+		}
+		
+		function recommencer(monTexte) {
+    		document.getElementById('texte').innerHTML = monTexte;
+			// on remet à zéro le nombre
+			nombre = 0;
+			document.body.style.backgroundColor = 'gray';
+		}
+    </script>
+</head>
+
+<body>
+	<div id="menu">
+    	<button onClick="demarrer()">Start</button>
+        <button onClick="arreter()">Stop</button>
+        <button onClick="recommencer('Justice League')">Reset</button>
+    </div>
+	<div id="texte">Justice League</div>
+</body>
+
+</html>

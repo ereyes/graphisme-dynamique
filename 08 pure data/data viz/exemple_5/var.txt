@@ -1,0 +1,2149 @@
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(260, 245)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 21 21, 0 0, -21 z"
+id="zone1" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(10, 165)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone2" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(187, 110)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone3" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(52, 191)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone4" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(288, 151)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone5" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(46, 66)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone6" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(166, 10)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone7" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(92, 17)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone8" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(246, 57)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 10 10, 0 0, -10 z"
+id="zone9" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(16, 227)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone10" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(251, 57)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone11" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(178, 49)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone12" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(268, 51)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone13" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(142, 227)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone14" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(177, 118)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone15" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(284, 162)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone16" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(214, 30)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 28 28, 0 0, -28 z"
+id="zone17" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(111, 217)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone18" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(198, 116)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone19" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(96, 221)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone20" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(170, 269)">
+<path fill="#844674" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 24 24, 0 0, -24 z"
+id="zone21" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(161, 86)">
+<path fill="#125383" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone22" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(9, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone23" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(0, 0)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone24" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(2, 8)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone25" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 9)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone26" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(6, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone27" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(5, 0)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone28" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(9, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone29" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 2)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone30" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(4, 4)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone31" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 6)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone32" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(4, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone33" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(8, 0)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone34" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(6, 7)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone35" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(2, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone36" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(8, 1)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone37" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(4, 3)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone38" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(5, 3)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone39" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(3, 2)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone40" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(1, 4)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone41" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(1, 4)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone42" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(8, 2)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone43" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(2, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone44" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(8, 0)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone45" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(2, 1)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone46" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(4, 2)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone47" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(3, 2)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone48" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(3, 5)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone49" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(1, 4)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone50" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(0, 9)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone51" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(1, 1)">
+<path fill="#517700" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone52" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(151, 244)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone53" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(163, 37)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 24 24, 0 0, -24 z"
+id="zone54" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(13, 201)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 13 13, 0 0, -13 z"
+id="zone55" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(94, 182)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone56" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(253, 284)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone57" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(210, 108)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone58" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(79, 215)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 25 25, 0 0, -25 z"
+id="zone59" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(164, 52)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone60" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(253, 36)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone61" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(21, 280)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone62" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(213, 275)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone63" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(232, 172)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 27 27, 0 0, -27 z"
+id="zone64" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(267, 202)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone65" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 117)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone66" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(9, 33)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone67" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(229, 83)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone68" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(290, 19)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone69" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(257, 93)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone70" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(217, 187)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone71" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(176, 81)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone72" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(114, 258)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone73" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(236, 156)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone74" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(104, 227)">
+<path fill="#536138" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone75" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(24, 183)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone76" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(117, 166)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone77" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(215, 82)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone78" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(178, 64)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone79" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(104, 17)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone80" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(120, 88)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone81" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(73, 200)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 6 6, 0 0, -6 z"
+id="zone82" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(95, 204)">
+<path fill="#338240" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone83" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(41, 4)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 28 28, 0 0, -28 z"
+id="zone84" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(10, 51)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone85" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(65, 7)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 18 18, 0 0, -18 z"
+id="zone86" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(36, 58)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone87" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(34, 12)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 10 10, 0 0, -10 z"
+id="zone88" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(24, 27)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 6 6, 0 0, -6 z"
+id="zone89" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(15, 17)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 10 10, 0 0, -10 z"
+id="zone90" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(8, 66)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone91" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(2, 75)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 16 16, 0 0, -16 z"
+id="zone92" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(3, 28)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone93" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(79, 73)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 16 16, 0 0, -16 z"
+id="zone94" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(63, 52)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone95" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(32, 75)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone96" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(2, 44)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 29 29, 0 0, -29 z"
+id="zone97" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(53, 40)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone98" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(34, 40)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 10 10, 0 0, -10 z"
+id="zone99" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(23, 26)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone100" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(37, 67)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone101" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(33, 15)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone102" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(54, 7)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 27 27, 0 0, -27 z"
+id="zone103" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(50, 54)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone104" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(60, 5)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 14 14, 0 0, -14 z"
+id="zone105" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(21, 26)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 9 9, 0 0, -9 z"
+id="zone106" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 75)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 14 14, 0 0, -14 z"
+id="zone107" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(1, 54)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone108" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(15, 6)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone109" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(1, 51)">
+<path fill="#615808" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 6 6, 0 0, -6 z"
+id="zone110" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(121, 252)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone111" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(55, 237)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 8 8, 0 0, -8 z"
+id="zone112" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(221, 176)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone113" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(60, 121)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone114" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(250, 204)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 8 8, 0 0, -8 z"
+id="zone115" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(149, 118)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone116" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 137)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone117" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(53, 248)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone118" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(95, 109)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone119" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(152, 227)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone120" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(101, 79)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone121" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(263, 78)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 27 27, 0 0, -27 z"
+id="zone122" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(119, 178)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone123" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(86, 171)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone124" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(81, 147)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone125" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(87, 25)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 22 22, 0 0, -22 z"
+id="zone126" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(8, 157)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone127" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(0, 43)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 27 27, 0 0, -27 z"
+id="zone128" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(228, 189)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone129" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(189, 114)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone130" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(82, 263)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone131" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(93, 80)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone132" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(107, 19)">
+<path fill="#337670" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone133" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(58, 30)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone134" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(9, 205)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone135" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(34, 46)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 20 20, 0 0, -20 z"
+id="zone136" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(99, 188)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone137" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(183, 21)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 18 18, 0 0, -18 z"
+id="zone138" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(193, 25)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone139" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(172, 3)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone140" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(53, 218)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone141" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(184, 97)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone142" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(81, 140)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone143" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(115, 143)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone144" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(145, 68)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone145" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(86, 162)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone146" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(122, 17)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone147" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(59, 88)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone148" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(173, 116)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 20 20, 0 0, -20 z"
+id="zone149" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(59, 57)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone150" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(195, 82)">
+<path fill="#341158" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone151" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(158, 156)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone152" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(130, 2)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 17 17, 0 0, -17 z"
+id="zone153" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(141, 56)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone154" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(95, 176)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone155" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(124, 102)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone156" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(79, 8)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone157" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(161, 58)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 21 21, 0 0, -21 z"
+id="zone158" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(146, 109)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 29 29, 0 0, -29 z"
+id="zone159" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(175, 119)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone160" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(48, 104)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 14 14, 0 0, -14 z"
+id="zone161" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(16, 25)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone162" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(25, 95)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone163" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(82, 133)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 16 16, 0 0, -16 z"
+id="zone164" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(146, 63)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone165" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(79, 46)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone166" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(80, 30)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone167" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(144, 94)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 29 29, 0 0, -29 z"
+id="zone168" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(111, 147)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone169" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(102, 11)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone170" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(60, 95)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 17 17, 0 0, -17 z"
+id="zone171" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(14, 111)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone172" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(166, 30)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone173" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(111, 12)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone174" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(64, 127)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone175" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(44, 44)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone176" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(72, 50)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone177" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(43, 23)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone178" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(41, 67)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone179" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(119, 173)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone180" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(156, 129)">
+<path fill="#020464" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone181" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(180, 209)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone182" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(20, 73)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone183" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(159, 123)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone184" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(12, 218)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone185" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(100, 11)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone186" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(185, 171)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone187" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(126, 15)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone188" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(79, 59)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone189" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(164, 145)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone190" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(151, 189)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone191" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(217, 266)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 22 22, 0 0, -22 z"
+id="zone192" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(72, 198)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone193" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(239, 195)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone194" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(134, 62)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone195" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(47, 64)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone196" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(231, 82)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone197" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(25, 205)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone198" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(153, 23)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 29 29, 0 0, -29 z"
+id="zone199" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(73, 99)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 27 27, 0 0, -27 z"
+id="zone200" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(146, 239)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone201" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(245, 146)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone202" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(97, 145)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone203" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(234, 91)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone204" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(175, 175)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone205" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(244, 287)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone206" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(99, 191)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone207" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(106, 204)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone208" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(167, 171)">
+<path fill="#482211" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone209" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(80, 64)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone210" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(4, 52)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone211" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(222, 62)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone212" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(262, 69)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone213" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(228, 248)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone214" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(37, 200)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 28 28, 0 0, -28 z"
+id="zone215" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(188, 184)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 16 16, 0 0, -16 z"
+id="zone216" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(3, 181)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone217" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(93, 61)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone218" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(266, 58)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone219" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(221, 110)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone220" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(164, 95)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone221" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(35, 125)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone222" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(135, 157)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone223" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(184, 75)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone224" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(194, 114)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone225" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(223, 268)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone226" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(200, 10)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone227" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(273, 78)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone228" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(94, 120)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone229" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(75, 150)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone230" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(240, 216)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone231" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(34, 87)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone232" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(64, 129)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone233" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(210, 170)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone234" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(157, 70)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone235" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(179, 247)">
+<path fill="#321460" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone236" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(141, 10)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 26 26, 0 0, -26 z"
+id="zone237" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(198, 125)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone238" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(41, 215)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone239" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(194, 233)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone240" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(145, 37)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone241" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(264, 133)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone242" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(240, 10)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone243" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(183, 63)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone244" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(139, 47)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone245" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(132, 118)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone246" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(46, 114)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone247" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(123, 214)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 21 21, 0 0, -21 z"
+id="zone248" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(87, 267)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 6 6, 0 0, -6 z"
+id="zone249" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(135, 161)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone250" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(210, 183)">
+<path fill="#106410" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone251" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(12, 136)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone252" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(32, 122)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 13 13, 0 0, -13 z"
+id="zone253" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(70, 12)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 27 27, 0 0, -27 z"
+id="zone254" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(17, 45)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone255" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(27, 36)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 18 18, 0 0, -18 z"
+id="zone256" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(84, 43)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone257" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(7, 8)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone258" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(67, 6)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone259" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(66, 75)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone260" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(85, 61)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone261" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(12, 141)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone262" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(17, 61)">
+<path fill="#420432" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone263" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(11, 18)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone264" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(3, 64)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 22 22, 0 0, -22 z"
+id="zone265" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(70, 81)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone266" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(94, 13)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone267" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(52, 19)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone268" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(5, 44)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone269" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(86, 114)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 8 8, 0 0, -8 z"
+id="zone270" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(83, 71)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone271" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(30, 88)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone272" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(93, 113)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone273" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(94, 51)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone274" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(102, 55)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone275" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(42, 6)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 8 8, 0 0, -8 z"
+id="zone276" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(19, 72)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone277" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(26, 117)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 6 6, 0 0, -6 z"
+id="zone278" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(36, 3)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone279" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(4, 0)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone280" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(78, 116)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone281" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(67, 110)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone282" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(41, 90)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone283" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(68, 108)">
+<path fill="#258635" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 7 7, 0 0, -7 z"
+id="zone284" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(202, 203)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone285" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(89, 57)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone286" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(164, 158)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 23 23, 0 0, -23 z"
+id="zone287" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(146, 51)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone288" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(164, 161)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 14 14, 0 0, -14 z"
+id="zone289" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(110, 199)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone290" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(29, 55)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 7 7, 0 0, -7 z"
+id="zone291" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(16, 92)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone292" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(111, 168)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone293" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(132, 4)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 8 8, 0 0, -8 z"
+id="zone294" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(189, 30)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone295" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(172, 111)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone296" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(15, 153)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone297" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(113, 199)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 9 9, 0 0, -9 z"
+id="zone298" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(159, 73)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone299" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(198, 199)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 12 12, 0 0, -12 z"
+id="zone300" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(99, 89)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 15 15, 0 0, -15 z"
+id="zone301" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(22, 169)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 5 5, 0 0, -5 z"
+id="zone302" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(174, 90)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone303" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(178, 47)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone304" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(150, 202)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone305" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(36, 110)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone306" />
+</g> </g></g>
+<g transform="translate(0, 0)">
+<g transform="translate(267, 234)">
+<g transform="translate(188, 206)">
+<path fill="#168583" stroke="#000000" stroke-width="0.5px" opacity="0.8"
+d="m 0, 0 0, 30 30, 0 0, -30 z"
+id="zone307" />
+</g> </g></g>

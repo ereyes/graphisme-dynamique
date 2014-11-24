@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--
+	Canvas: placing an image
+-->
+
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color:#eee;
+			}
+			canvas {
+				border:1px solid gray;
+			}
+		</style>
+		<script language="JavaScript" type="text/javascript">
+		
+		var canvas;
+		var context;
+		
+		window.onload = function() {
+			canvas = document.getElementById("myCanvas");
+			context = canvas.getContext("2d");
+			drawScreen();
+		}
+		
+		
+		function drawScreen() {
+			/* testing canvas
+			context.fillStyle = "#aaa";
+			context.fillRect(0, 0, 200, 200);
+			context.fillStyle = "white";
+			context.font = "20px Arial";
+			context.textBaseline = "top";
+			context.fillText("Hello", 0, 0);
+			*/
+			
+			/*
+			 drawImage() parameters
+			 image, dx, dy, width, height
+			*/
+
+			placeSimpsons(context, simpsons, 0, 0, 101, 75);
+			placeSimpsons(context, simpsons, 50, 50, 203, 150);
+			placeSimpsons(context, simpsons, 100, 150, 406, 300);
+
+
+		}
+		
+		var simpsons = new Image();
+		simpsons.src = "simpsons.jpg";
+		
+		function placeSimpsons(ctx, obj, posX, posY, width, height) {
+			if (width && height) {
+				context.drawImage(obj, posX, posY, width, height);
+			} else {
+				context.drawImage(obj, posX, posY);
+			}
+		}
+
+		
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="600" height="600"></canvas>
+	</body>
+</html>

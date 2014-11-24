@@ -1,0 +1,27 @@
+// ConTextTree Design: snowflake
+
+background { b -1 }
+startshape ctt_design_start
+      rule ctt_design_start { ctt_layout_do { } }
+
+// ----------------------------------------------
+
+// ## Fonts ##
+include ctt_fontmap_default.cfdg  // default
+include ctt_fontmap_block_black.cfdg
+include poeme.cfdg
+
+// ## Layouts ##
+include ctt_layout_default.cfdg // default
+include ctt_layout_snowflake.cfdg
+
+// ## Objects ##
+include ctt_object_default.cfdg
+
+// ## Custom Layouts and Objects ## //
+rule ctt_object { tag { hue 100 b 1 s .5 alpha -0.3 } }
+rule ctt_object_bg { }
+
+//rule ctt_layout   .4 { ctt_object { a -.5  } }
+//rule ctt_layout   .5 { ctt_layout { r   5  } }
+//rule ctt_layout   .5 { ctt_layout { r  -5  } }

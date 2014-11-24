@@ -1,0 +1,21 @@
+#N canvas 503 25 641 294 10;
+#X obj 155 10 r GemHeadGen;
+#X obj 155 83 separator;
+#X text 348 72 toujours le separator pour qu'il n'y ait pas de brouilage
+de donnés au niveau de l'ordre des instances (cela renvoie en gros
+à un pushmatrice;
+#X obj 155 166 translateXYZ \$3 \$4 0;
+#X obj 285 26 \$2;
+#X obj 154 224 text3d \$1;
+#X obj 303 190 random 10;
+#X obj 222 207 clip 3 10;
+#X obj 155 44 t a b;
+#X obj 303 130 once;
+#X connect 0 0 8 0;
+#X connect 1 0 3 0;
+#X connect 3 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 1;
+#X connect 8 0 1 0;
+#X connect 8 1 9 0;
+#X connect 9 0 6 0;

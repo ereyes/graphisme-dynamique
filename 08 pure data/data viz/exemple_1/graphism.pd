@@ -1,0 +1,100 @@
+#N canvas 0 22 450 300 10;
+#X obj 160 -191 gemhead;
+#X obj 160 4 separator;
+#X obj 160 159 translateXYZ;
+#X obj 253 96 expr (($f1/$f2)*8)-4;
+#X obj 322 142 expr (($f1/$f2)*-8)+4;
+#X obj 370 -195 r sizeWin;
+#X obj 370 -173 unpack f f;
+#X obj 160 -129 repeat 200;
+#X obj 253 -79 counter 0 19;
+#X obj 322 -45 counter 0 9;
+#X obj 370 -149 / 50;
+#X obj 427 -150 / 50;
+#X obj 37 -60 tabread magnetude;
+#X obj 37 -79 counter 199;
+#X obj 287 176 separator;
+#X obj 160 188 separator;
+#X obj 287 275 colorRGB 1 0 0 1;
+#X obj 310 254 / 10;
+#X obj 159 335 text3d;
+#X obj 159 213 colorRGB 1 1 1 1;
+#X msg 64 318 text \$1;
+#X obj 337 303 / 20;
+#X obj 160 45 translateXYZ -0.5 -1 0;
+#X obj 159 239 translateXYZ 0 0 0.01;
+#X text 56 -214 interprétation graphique des données du tremblement
+de terre;
+#X obj 160 -96 t a b b;
+#X obj 37 -36 s VarTabMagnetude;
+#X obj 64 272 r VarTabMagnetude;
+#X obj 64 295 t a a;
+#X obj 310 206 r VarTabMagnetude;
+#X obj 310 227 t a a;
+#X text 470 -171 nous recevons la grandeur en width et height de l'écran
+;
+#X text 476 -143 nous la divisons par 50;
+#X text 409 82 l'expression ici permet de définir l'écart entre chaque
+zone ici en X il y en aura 19;
+#X text 347 -80 les compteurs permettent de compter en boucle et ceci
+infiniment;
+#X text 475 133 l'expression ici permet de définir l'écart entre
+chaque zone ici en X il y en aura 9;
+#X text 235 -127 le repeat permet de répéter le flux dans chaque
+frame => ici 200 fois;
+#X text 227 -11 pour éviter qu'il y ait du désordre dans la répétition
+: le separator permet d'empêcher que des informations d'une itération
+affecte une autre itération;
+#X text 147 360 grâce au repeat j'ai 200 square dessinés et 200 text3d
+;
+#X text 430 202 on reçoit ici les données de la magnétude;
+#X text 358 248 on fait la variation de la couleur rouge avec;
+#X text 379 302 on fait la taille du square;
+#X text -117 252 on reçoit ici les données de la magnétude;
+#X text -125 336 on récupère la valeur comme un texte et;
+#X text -126 350 la taille du texte;
+#X obj 287 336 cube 0.2;
+#X floatatom 261 -192 5 0 0 0 - - -;
+#X floatatom 264 -163 5 0 0 0 - - -;
+#X floatatom 266 -141 5 0 0 0 - - -;
+#X obj 181 -157 rotateXYZ;
+#X connect 0 0 7 0;
+#X connect 0 0 49 0;
+#X connect 1 0 22 0;
+#X connect 2 0 14 0;
+#X connect 2 0 15 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 2;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 6 1 11 0;
+#X connect 7 0 25 0;
+#X connect 8 0 3 0;
+#X connect 8 3 9 0;
+#X connect 9 0 4 0;
+#X connect 10 0 3 1;
+#X connect 11 0 4 1;
+#X connect 12 0 26 0;
+#X connect 13 0 12 0;
+#X connect 14 0 16 0;
+#X connect 15 0 19 0;
+#X connect 16 0 45 0;
+#X connect 17 0 16 1;
+#X connect 19 0 23 0;
+#X connect 20 0 18 0;
+#X connect 21 0 45 1;
+#X connect 22 0 2 0;
+#X connect 23 0 18 0;
+#X connect 25 0 1 0;
+#X connect 25 1 8 0;
+#X connect 25 2 13 0;
+#X connect 27 0 28 0;
+#X connect 28 0 20 0;
+#X connect 28 1 18 1;
+#X connect 29 0 30 0;
+#X connect 30 0 17 0;
+#X connect 30 1 21 0;
+#X connect 46 0 49 1;
+#X connect 47 0 49 2;
+#X connect 48 0 49 3;
+#X connect 49 0 7 0;

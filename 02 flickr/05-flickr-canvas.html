@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flickr tags dans un canvas</title>
+<style>  
+	body { margin:0px; padding:0px;}
+	img {  }
+	canvas { display:block;}
+</style>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+<script>
+
+	var mesPhotos = [];
+	var angle, vitesse, x, y;
+	
+	$(document).ready(function() {
+		
+		$('#cherchePhotos').click(function(){
+
+			var jsonURL = 'http://api.flickr.com/services/feeds/photos_public.gne?tags=';
+			var formatJson = '&tagmode=ANY&format=json&jsoncallback=?';
+			var maTag = $('input').val();
+			var jsonURLComplet = jsonURL + maTag + formatJson;			
+			
+			// .getJSON est la fonction de JQuery pour parser un document JSON
+			$.getJSON(jsonURLComplet, function(data) {
+			
+				// .each est la fonction de JQuery pour les boucles
+				$.each(data.items, function(i, photo) {
+					
+					// cette variable est utilisée pour structurer les données sous format HTML
+					mesPhotos[i] = '<img src="';
+					mesPhotos[i]+= photo.media.m.replace('_m', '_s') + '">';
+					
+					// ces deux dernières lignes affichent le contenu dans la page web
+					$('#photos').append(mesPhotos[i]);
+				
+				});
+			
+			}); 
+		});
+    });
+
+	
+	function putImages(){
+		var canvas = document.getElementById('monCanvas');
+		var context = canvas.getContext('2d');
+		var largeur = canvas.width = window.innerWidth;
+		var hauteur = canvas.height = window.innerHeight;
+
+		context.fillStyle = 'lightgray';
+		context.fillRect(0,0,largeur,hauteur);		
+		
+		var taillePhoto = 100;
+		
+		//context.translate(canvas.width/2, canvas.height/2);
+		
+		  for (i=0;i<document.images.length;i++){
+			x = Math.floor(Math.random()*largeur);
+			y = Math.floor(Math.random()*hauteur);
+
+			//context.globalAlpha = 0.7;
+			//context.rotate((Math.PI*2) / i);
+			context.drawImage(document.images[i], x,y, taillePhoto,taillePhoto);
+			
+		  } 
+		
+		
+    }
+	
+
+</script>
+
+</head>
+
+<body>
+	<input><button id="cherchePhotos">Chercher les photos</button> <button id="dessinerImages" onClick="putImages();">Put images on canvas</button> 
+	<canvas id="monCanvas"></canvas>
+    <div id="photos"></div>
+</body>
+</html>

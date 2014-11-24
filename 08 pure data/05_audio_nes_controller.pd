@@ -1,0 +1,27 @@
+#N canvas 548 45 527 414 10;
+#X obj 166 99 hid;
+#X msg 232 72 print;
+#X msg 137 28 open 5;
+#X obj 95 55 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 163 151 route abs;
+#X obj 147 209 route abs_x abs_y;
+#X floatatom 119 254 5 0 0 0 - - -;
+#X floatatom 209 256 5 0 0 0 - - -;
+#X obj 173 365 dac~;
+#X obj 139 295 * 500;
+#X obj 198 322 osc~;
+#X obj 230 293 * 1000;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 7 0;
+#X connect 6 0 9 0;
+#X connect 7 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 10 0 8 1;
+#X connect 11 0 10 0;

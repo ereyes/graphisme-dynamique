@@ -1,0 +1,16 @@
+startshape arbre
+
+CF::Background = [b -1 ]
+
+shape arbre 
+
+rule 100 {
+	CIRCLE [ ]
+	arbre [ y 0.1 s 0.995 r 0.2 hue 3 sat 1 b 1 ]
+}
+
+rule {
+	CIRCLE []
+	arbre [ y 0.2 s 0.85 r 15 x -0.1 ]
+	arbre [ y 0.2 s 0.85 r -15 x 0.1 flip 90  ]
+}

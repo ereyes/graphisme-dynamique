@@ -1,0 +1,26 @@
+startshape start
+
+rule start {
+    fadespiral {f 90 b 1}
+}
+ 
+rule fadespiral {
+    CIRCLE {}
+    fadespiral {x .9 r -4 s .997 b -.0001 hue 10}
+    line {r -45 sat 1 hue 200 a -.65}
+}
+rule fadespiral .05 {
+    fadespiral {hue .01}
+    line {r 45 hue 260 sat 1 a -.65}
+}
+rule fadespiral .01 {
+    fadespiral {f 90}
+}
+rule fadespiral .001 {
+    start {s 4 x 25}
+}
+ 
+rule line {
+    SQUARE { x .5 s .5 10 b 1}
+}
+ 

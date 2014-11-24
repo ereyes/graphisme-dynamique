@@ -1,0 +1,27 @@
+// ConTextTree Layout: template
+
+// See ctt_layout_default for more details on layouts.
+
+startshape ctt_layout_start
+include ctt_object_default.cfdg
+
+rule ctt_object .0000000000001 { SQUARE [ b 1 sat 1 hue 0 ] } // deferential
+
+// ---------------------------
+
+rule ctt_layout_start {
+	6* {r 60} ctt_layout_do {} // first call is _do, so we don't stop or drift on the first iteration
+}
+
+rule ctt_layout { ctt_layout_do { } }
+
+rule ctt_layout_do {
+	ctt_object {}
+	ctt_layout_do { y 0.95 s 0.97 }
+}
+rule ctt_layout_do 0.03 {
+	ctt_object {}
+	ctt_layout_do { r 60 }
+	ctt_layout_do { r -60 }
+	ctt_layout_do { y 0.95 s 0.97  }
+}

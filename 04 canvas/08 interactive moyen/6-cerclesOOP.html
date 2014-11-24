@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OOP Object-Oriented Programming</title>
+<style>
+canvas { border:solid 1px gray; }
+body { background-color:#eee; }
+</style>
+
+<script>
+
+// création de la classe Cercle
+function Cercle(x, y, rayon, couleur) {
+	this.x = x;
+	this.y = y;
+	this.rayon = rayon;
+	this.couleur = couleur;
+	this.isSelected = false;
+}
+
+// Un tableau pour stocker les cercles
+var cercles = [];
+
+var canvas;
+var context;
+
+window.onload = function() {
+	canvas = document.getElementById("myCanvas");
+	context = canvas.getContext("2d");
+	
+	// définition de l'événement qui lance les fonctions
+	canvas.onmousedown = canvasClick;
+	canvas.onmousemove = dragCircle;
+	canvas.onmouseup = stopDragging;
+	canvas.onmouseout = stopDragging;
+
+	
+}
+
+function ajouterCercle() {
+	var x = Math.floor(Math.random() * canvas.width);
+	var y = Math.floor(Math.random() * canvas.height);
+	var rayon = Math.random() * 50;
+	var couleurs = ['chocolate', 'CadetBlue', 'azure', 'RosyBrown'];
+	var couleur = couleurs[Math.floor(Math.random() * couleurs.length)];
+	
+	var cercle = new Cercle(x, y, rayon, couleur);
+	cercles.push(cercle);
+	
+	dessinerCercle();
+}
+
+
+function dessinerCercle() {
+	
+	// redessiner les cercles pour faire propre le contour de l'ancienCercle
+	context.clearRect(0, 0, canvas.width, canvas.height);
+	
+	for(var i = 0; i < cercles.length; i++) {
+		
+		var cercle = cercles[i];
+		
+		context.globalAlpha = 0.8;
+		context.beginPath();
+		context.arc(cercle.x, cercle.y, cercle.rayon, 0, Math.PI * 2);
+		
+		context.fillStyle = cercle.couleur;
+		context.strokeStyle = "black";
+		
+		if (cercle.isSelected == true) {
+			context.lineWidth = 5;
+		} else {
+			context.lineWidth = 1;
+		}
+		
+		context.fill();
+		context.stroke();
+		
+	}
+}
+
+var cercleAncien;
+
+function canvasClick(e) {
+	
+	// Récupérer les coordonnées du clic
+	var clickX = e.pageX - canvas.offsetLeft;
+	var clickY = e.pageY - canvas.offsetTop;
+	
+	// Tester s'il y un cercle
+	for (var i = cercles.length-1; i >= 0; i--) {
+			var cercle = cercles[i];
+			
+			// Formule selon Pythagore
+			var distanceFromCenter = Math.sqrt(Math.pow(cercle.x - clickX, 2) + Math.pow(cercle.y - clickY, 2));
+			
+			// Vérifier la distance
+			if (distanceFromCenter <= cercle.rayon) {
+				
+				// Effacer la sélection précédente
+				if (cercleAncien != null) {
+					cercleAncien.isSelected = false;
+				}
+				
+				cercleAncien = cercle;
+				
+				// Sélectionner le nouveau cercle
+				cercle.isSelected = true;
+				
+				// Mettre à jour l'affichage
+				dessinerCercle();
+				
+				isDragging = true;
+				
+				// Stop la vérification des cercles
+				return;
+				
+			}
+	}
+}
+
+
+var isDragging = false;
+
+function dragCircle(e) {
+		if (isDragging == true) {
+			if (cercleAncien != null) {
+					var x = e.pageX - canvas.offsetLeft;
+					var y = e.pageY - canvas.offsetTop;
+					
+					cercleAncien.x = x;
+					cercleAncien.y = y;
+					
+					dessinerCercle();
+			}
+		}
+}
+
+function stopDragging() {
+	isDragging = false;
+}
+
+function effacer() {
+	cercles = [];
+	dessinerCercle();
+}
+
+
+</script>
+
+</head>
+
+<body>
+<p>Déplacez les cercles</p>
+<canvas id="myCanvas" width="700" height="400"></canvas>
+<br>
+<button onClick="ajouterCercle();">Ajouter cercle</button><button onclick="effacer();">Effacer</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

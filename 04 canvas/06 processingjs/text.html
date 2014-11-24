@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+canvas { border:gray solid 1px;}
+iframe { visibility:hidden; }
+</style>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="processing-1.4.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var text;
+
+function drawSomeText(id) {
+  var pjs = Processing.getInstanceById(id);
+  text = document.getElementById('inputtext').value;
+  pjs.draw(text);
+  
+  var myLang = $('select[name="options"]').val();
+  
+  var donnees = $.get();
+  
+  var speechURL = 'http://translate.google.com/translate_tts?ie=UTF-8&q='+ text +'&tl='+ myLang +'&total=1&idx=0&textlen=5&prev=input';
+  $('iframe').attr('src', speechURL);
+  
+}
+  
+</script>
+</head>
+
+<body>
+
+<canvas id="myCanvas" data-processing-sources="text/text.pde"></canvas>
+<br>
+<input value="..." id="inputtext">
+<button type="button" onclick="drawSomeText('myCanvas')">draw text</button>
+<select name="options">
+    <option value="es-mx">Mexico</option>
+    <option value="fr">France</option>
+    <option value="en-us">USA</option>
+</select>
+<br>
+<iframe id="myiFrame"></iframe>
+
+</body>
+</html>

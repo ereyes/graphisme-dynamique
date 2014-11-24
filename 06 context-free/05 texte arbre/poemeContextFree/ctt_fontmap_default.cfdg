@@ -1,0 +1,78 @@
+// ConTextTree fontmap files:
+// Write / generate all your Context Free code
+// using a set of standard functions - letters A-Z,
+// and numbers n0-n9. Substitute or randomly include
+// new fonts by creating mapping files to the standard
+// letter names.
+
+// The CTT default font is based on Block Typeface.
+// It is 'deferential' - meaning it can be included in libraries that require a font to function, but letters should defer to any other font library 999999/1000000.
+// Block Typeface was originally created by Brad Sandman.
+// http://www.contextfreeart.org/gallery/view.php?id=66
+
+include block_typeface.cfdg
+
+// startshape ctt_test_fontmap_start
+//   include ../ctt/ctt_test_fontmap.cfdg // the default font is included by ctt_test_fontmap, so this could cause a recursion problem.
+
+	rule     A        .0000001 { ctt_object_bg {} A_BLOCK { s .95 } }
+	rule     B        .0000001 { ctt_object_bg {} B_BLOCK { s .95 } }
+	rule     C        .0000001 { ctt_object_bg {} C_BLOCK { s .95 } }
+	rule     D        .0000001 { ctt_object_bg {} D_BLOCK { s .95 } }
+	rule     E        .0000001 { ctt_object_bg {} E_BLOCK { s .95 } }
+	rule     F        .0000001 { ctt_object_bg {} F_BLOCK { s .95 } }
+	rule     G        .0000001 { ctt_object_bg {} G_BLOCK { s .95 } }
+	rule     H        .0000001 { ctt_object_bg {} H_BLOCK { s .95 } }
+	rule     I        .0000001 { ctt_object_bg {} I_BLOCK { s .95 } }
+	rule     J        .0000001 { ctt_object_bg {} J_BLOCK { s .95 } }
+	rule     K        .0000001 { ctt_object_bg {} K_BLOCK { s .95 } }
+	rule     L        .0000001 { ctt_object_bg {} L_BLOCK { s .95 } }
+	rule     M        .0000001 { ctt_object_bg {} M_BLOCK { s .95 } }
+	rule     N        .0000001 { ctt_object_bg {} N_BLOCK { s .95 } }
+	rule     O        .0000001 { ctt_object_bg {} O_BLOCK { s .95 } }
+	rule     P        .0000001 { ctt_object_bg {} P_BLOCK { s .95 } }
+	rule     Q        .0000001 { ctt_object_bg {} Q_BLOCK { s .95 } }
+	rule     R        .0000001 { ctt_object_bg {} R_BLOCK { s .95 } }
+	rule     S        .0000001 { ctt_object_bg {} S_BLOCK { s .95 } }
+	rule     T        .0000001 { ctt_object_bg {} T_BLOCK { s .95 } }
+	rule     U        .0000001 { ctt_object_bg {} U_BLOCK { s .95 } }
+	rule     V        .0000001 { ctt_object_bg {} V_BLOCK { s .95 } }
+	rule     W        .0000001 { ctt_object_bg {} W_BLOCK { s .95 } }
+	rule     X        .0000001 { ctt_object_bg {} X_BLOCK { s .95 } }
+	rule     Y        .0000001 { ctt_object_bg {} Y_BLOCK { s .95 } }
+	rule     Z        .0000001 { ctt_object_bg {} Z_BLOCK { s .95 } }
+	rule NUM_0        .0000001 { ctt_object_bg {} NUM_0_BLOCK { s .95 } }
+	rule NUM_1        .0000001 { ctt_object_bg {} NUM_1_BLOCK { s .95 } }
+	rule NUM_2        .0000001 { ctt_object_bg {} NUM_2_BLOCK { s .95 } }
+	rule NUM_3        .0000001 { ctt_object_bg {} NUM_3_BLOCK { s .95 } }
+	rule NUM_4        .0000001 { ctt_object_bg {} NUM_4_BLOCK { s .95 } }
+	rule NUM_5        .0000001 { ctt_object_bg {} NUM_5_BLOCK { s .95 } }
+	rule NUM_6        .0000001 { ctt_object_bg {} NUM_6_BLOCK { s .95 } }
+	rule NUM_7        .0000001 { ctt_object_bg {} NUM_7_BLOCK { s .95 } }
+	rule NUM_8        .0000001 { ctt_object_bg {} NUM_8_BLOCK { s .95 } }
+	rule NUM_9        .0000001 { ctt_object_bg {} NUM_9_BLOCK { s .95 } }
+	rule SYM_AMP      .0000001 { ctt_object_bg {} AT_BLOCK { s .95 } }
+	rule SYM_BRACKETS .0000001 { ctt_object_bg {} LSQUOTE_BLOCK { s .5 1 x -.3 y -.4 } RSQUOTE_BLOCK { s .5 1 x 0 y -.4 } }
+	rule SYM_HASH     .0000001 { ctt_object_bg {}                   }
+	rule SYM_PLUS     .0000001 { ctt_object_bg {} PLUS_BLOCK { s .95 } }
+	rule SYM_YEN      .0000001 { ctt_object_bg {}                   }
+	// rule SYM_      .0000001 { ctt_object_bg {}     ACUTE_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     GRAVE_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}   LSQUOTE_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}   RSQUOTE_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}   LDQUOTE_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}   RDQUOTE_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     SLASH_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {} BACKSLASH_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     MINUS_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}      MULT_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}       DIV_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}  ASTERISK_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}    EQUALS_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     QUEST_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}    EXCLAM_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}    PERIOD_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     COMMA_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     COLON_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {} SEMICOLON_BLOCK { s .95 } }
+	// rule SYM_      .0000001 { ctt_object_bg {}     TILDA_BLOCK { s .95 } }

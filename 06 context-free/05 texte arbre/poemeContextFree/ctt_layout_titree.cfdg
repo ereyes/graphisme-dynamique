@@ -1,0 +1,46 @@
+// ConTextTree Layout: titree
+
+// http://www.ozonehouse.com/john/pix/tritree.png
+
+// See ctt_layout_default for more details on layouts.
+
+startshape ctt_layout_start
+
+background { b 0.5 }
+
+include ctt_object_default.cfdg
+include ctt_layout_default.cfdg
+include poeme.cfdg
+
+rule ctt_object { tag { b 1 s .5 } }
+rule ctt_object_bg { }
+
+//rule ctt_object .0000000000001 { SQUARE [ b 1 sat 1 hue 0 ] } // deferential
+
+// ---------------------------
+
+rule ctt_layout_start {
+	ctt_layout_do { b 1 sat 1 } // first call is _do, so we don't stop or drift on the first iteration
+}
+
+rule ctt_object { tag { b 1 s .5 } }
+rule ctt_object_bg { }
+rule ctt_layout { ctt_layout_do { } }
+rule ctt_layout_do { ctt_layout_titree_do {} }
+rule ctt_layout_titree_do { 5* { r 120 } titree_either { } }
+
+rule titree_both {
+	titree_bl { r  90 h 200 alpha -0.5 }
+	titree_bl { r -90 h 50 flip 90 }
+}
+rule titree_either { titree_bl {} }
+rule titree_either { titree_bl { flip 180 } }
+rule titree_bl { ctt_object {} titree_wl { s 0.7 a -.5 y 0.995 } }
+
+rule titree_wl 2 { titree_bl { r 3 } }
+rule titree_wl 2 { titree_bl { r 4 } }
+rule titree_wl 2 { titree_bl { r 5 } }
+rule titree_wl 2 { titree_bl { r 6 } }
+rule titree_wl 2 { titree_bl { r 7 } }
+rule titree_wl { titree_both { r 3 } }
+rule titree_wl { titree_bl { r -10 flip 90 } }

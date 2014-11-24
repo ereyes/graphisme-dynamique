@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+#contenu {
+	width:700px;
+	height:500px;
+	border:1px solid gray;
+	background-color:#666666;
+}
+</style>
+<script src="three.min.js"></script>
+<script>
+function onload(){
+	
+	// recupère le div
+	var contenu = document.getElementById('contenu'); 
+	
+	// crée un renderer et ajoute-le dans le div
+	var renderer = new THREE.WebGLRenderer();
+	renderer.setSize(contenu.offsetWidth,contenu.offsetHeight);
+	contenu.appendChild(renderer.domElement);
+	
+	// crée une scène
+	var scene = new THREE.Scene();
+	
+	// crée une caméra et ajoute-la à la scene
+	var camera = new THREE.PerspectiveCamera(45, contenu.offsetWidth/contenu.offsetHeight,1,4000);
+	camera.position.set(0,0,3);
+	scene.add(camera);
+	
+	// crée un carré et ajoute le à la scene
+	var geometry = new THREE.PlaneGeometry(1,1);
+	var mesh = new THREE.Mesh(geometry,new THREE.MeshBasicMaterial()); // MeshBasicMaterial = couleur simples et opacité
+	scene.add(mesh);
+	
+	// fait le rendu... affiche-le
+	renderer.render(scene,camera);
+}
+</script>
+</head>
+
+<body onLoad="onload();">
+
+<div id="contenu"></div>
+
+</body>
+</html>

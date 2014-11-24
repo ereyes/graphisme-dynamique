@@ -1,0 +1,137 @@
+<!-- 
+
+Ce document affiche la quantitié de balles spécifiée dans la valeur numBalles
+Fait par E. Reyes, inspiré de Steve and Jeff Fulton, 2011
+
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Untitled</title>
+
+
+<style>
+
+canvas { border:1px solid gray; background-color:white;}
+body { background-color:#eee; }
+
+</style>
+
+<script>
+
+window.onload = function() {
+
+	var canvas = document.getElementById('myCanvas');
+	var context = canvas.getContext('2d');
+   
+	var numBalles = 500;
+	var tailleMax = 15;
+	var tailleMin = 5;
+	var vitesseMax = tailleMax + 7; // les balles plus grosses vont plus lentement, plus l'addition est moins éléveé
+	
+	var balles = new Array();
+	
+	// les valeurs qui commence par init indiquent la valeur de départ
+	var initBalle;
+	var initX;
+	var initY;
+	var initVitesse;
+	var initAngle;
+	var initRayon;
+	var initRadians;
+	var initXunits;
+	var initYunits;		
+		
+	var initCouleur;
+	var couleurs = ['gray', 'aqua', 'CadetBlue'];
+
+	for (var i = 0; i < numBalles; i++) {
+		
+		// optimisation d'algorithmes... cf. Fulton 2011
+		initRayon = Math.floor(Math.random()*tailleMax) + tailleMin;
+		initX = initRayon * 2 + (Math.floor(Math.random()*canvas.width)-initRayon * 2);
+		initY = initRayon * 2 + (Math.floor(Math.random()*canvas.height)-initRayon * 2);
+		initVitesse = vitesseMax - initRayon;
+		initAngle =  Math.floor(Math.random()*360);
+		initRadians = initAngle * Math.PI/ 180;
+		initXunits = Math.cos(initRadians) * initVitesse;
+		initYunits = Math.sin(initRadians) * initVitesse;
+		initCouleur = couleurs[Math.floor(Math.random() * couleurs.length)];
+		
+		// un objet littéral
+		initBalle = {
+			x : initX,
+			y : initY,
+			rayon : initRayon, 
+			radians : initRadians,
+			vitesse : initVitesse, 
+			angle : initAngle, 
+			xunits : initXunits, 
+			yunits : initYunits,
+			couleur : initCouleur		
+		}
+		
+		balles.push(initBalle);
+		
+		
+	}
+	
+	setInterval(afficher, 20);
+
+ 	function afficher() {
+
+		context.clearRect(0,0,canvas.width, canvas.height);
+		
+		var balle;
+		
+		
+		for (var i =0; i <balles.length; i++) {
+			
+			balle = balles[i];
+			balle.x += balle.xunits;
+			balle.y += balle.yunits;
+			
+			context.beginPath();
+			context.globalAlpha = 0.5;
+			context.arc(balle.x, balle.y, balle.rayon, 0, Math.PI*2);
+
+			context.fillStyle = balle.couleur;
+			context.fill();
+		
+			if (balle.x > canvas.width || balle.x < 0 ) {
+				balle.angle = 180 - balle.angle;
+				raffraichir(balle);
+				
+			} else if (balle.y > canvas.height || balle.y < 0) {
+				balle.angle = 360 - balle.angle;
+				raffraichir(balle); 
+				
+			}
+		}
+  			
+	}
+	
+	function raffraichir(balle) {
+		
+		balle.radians = balle.angle * Math.PI/ 180;
+		balle.xunits = Math.cos(balle.radians) * balle.vitesse;
+		//balle.yunits = Math.sin(balle.radians) * balle.vitesse;
+		
+	
+	}
+
+}
+
+</script>
+
+</head>
+<body> 
+	<canvas id="myCanvas" width="700" height="400"></canvas>
+</body>
+</html>
+
+
+
+

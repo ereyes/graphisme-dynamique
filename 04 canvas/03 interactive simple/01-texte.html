@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Canvas : texte dynamique</title>
+<style>canvas {border:1px solid gray;}</style>
+<script>
+
+var canvas;
+var context;
+
+window.onload = function() {
+
+	canvas = document.getElementById('myCanvas');
+	context = canvas.getContext('2d');
+	
+}
+
+function dessinerText() {
+	
+	var monTexte = document.getElementById('texte').value;
+	var monCouleur = document.getElementById('couleur').value;
+	
+	context.clearRect(0, 0, canvas.width, canvas.height);
+	
+	context.font = 'bold 30px Verdana';
+	
+	context.shadowColor = 'black';
+	context.shadowBlur = 5;
+	context.shadowOffsetX = 2;
+	context.shadowOffsetY = 2;
+		
+	// deux types de texte : fill, stroke ou combiné
+	context.fillStyle = monCouleur;
+	context.fillText(monTexte, 50, 50);
+	
+	context.strokeStyle = 'gray';
+	context.strokeText(monTexte, 50, 150);
+		
+}
+
+
+</script>
+</head>
+
+<body>
+<canvas id="myCanvas" width="700" height="400"></canvas>
+<br />
+
+<input value="Type text here..." id="texte"/>
+<input id="couleur" value="red"  />
+<button onclick="dessinerText();">Go!</button>
+</body>
+</html>

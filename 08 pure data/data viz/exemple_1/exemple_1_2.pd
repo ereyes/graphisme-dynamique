@@ -1,0 +1,445 @@
+#N canvas 484 50 892 694 10;
+#X declare -lib moocow;
+#X declare -lib list-abs;
+#X declare -lib mrpeach;
+#X declare -lib zexy;
+#X declare -lib moocow;
+#X obj -99 -167 gemwin;
+#X msg -99 -190 dimen \$1 \$2 \, FSAA 4 \, frame 25 \, create \, 1
+;
+#X msg -99 -229 800 600;
+#X obj -43 -212 s sizeWin;
+#X msg -155 -184 destroy;
+#X text -103 -147 gemwin >>> permet de créer la fenêtre (WIN) de
+graphique environnement multimedia (GEM);
+#X text 23 -213 envoi de width et height de la fenêtre;
+#N canvas 126 50 993 612 interpretation_graphique 1;
+#X obj 150 -201 gemhead;
+#X obj 150 -6 separator;
+#X obj 150 149 translateXYZ;
+#X obj 243 86 expr (($f1/$f2)*8)-4;
+#X obj 312 132 expr (($f1/$f2)*-8)+4;
+#X obj 360 -205 r sizeWin;
+#X obj 360 -183 unpack f f;
+#X obj 150 -139 repeat 200;
+#X obj 243 -89 counter 0 19;
+#X obj 312 -55 counter 0 9;
+#X obj 360 -159 / 50;
+#X obj 417 -160 / 50;
+#X obj 27 -70 tabread magnetude;
+#X obj 27 -89 counter 199;
+#X obj 277 166 separator;
+#X obj 150 178 separator;
+#X obj 277 265 colorRGB 1 0 0 1;
+#X obj 300 244 / 10;
+#X obj 149 325 text3d;
+#X obj 149 203 colorRGB 1 1 1 1;
+#X msg 54 308 text \$1;
+#X obj 327 293 / 20;
+#X obj 150 35 translateXYZ -0.5 -1 0;
+#X obj 149 229 translateXYZ 0 0 0.01;
+#X text 46 -224 interprétation graphique des données du tremblement
+de terre;
+#X obj 150 -106 t a b b;
+#X obj 27 -46 s VarTabMagnetude;
+#X obj 54 262 r VarTabMagnetude;
+#X obj 54 285 t a a;
+#X obj 300 196 r VarTabMagnetude;
+#X obj 300 217 t a a;
+#X text 460 -181 nous recevons la grandeur en width et height de l'écran
+;
+#X text 466 -153 nous la divisons par 50;
+#X text 399 72 l'expression ici permet de définir l'écart entre chaque
+zone ici en X il y en aura 19;
+#X text 337 -90 les compteurs permettent de compter en boucle et ceci
+infiniment;
+#X text 465 123 l'expression ici permet de définir l'écart entre
+chaque zone ici en X il y en aura 9;
+#X text 225 -137 le repeat permet de répéter le flux dans chaque
+frame => ici 200 fois;
+#X text 217 -21 pour éviter qu'il y ait du désordre dans la répétition
+: le separator permet d'empêcher que des informations d'une itération
+affecte une autre itération;
+#X text 137 350 grâce au repeat j'ai 200 square dessinés et 200 text3d
+;
+#X text 420 192 on reçoit ici les données de la magnétude;
+#X text 348 238 on fait la variation de la couleur rouge avec;
+#X text 369 292 on fait la taille du square;
+#X text -127 242 on reçoit ici les données de la magnétude;
+#X text -135 326 on récupère la valeur comme un texte et;
+#X text -136 340 la taille du texte;
+#X obj 277 326 square 0.2;
+#X connect 0 0 7 0;
+#X connect 1 0 22 0;
+#X connect 2 0 14 0;
+#X connect 2 0 15 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 2;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 6 1 11 0;
+#X connect 7 0 25 0;
+#X connect 8 0 3 0;
+#X connect 8 3 9 0;
+#X connect 9 0 4 0;
+#X connect 10 0 3 1;
+#X connect 11 0 4 1;
+#X connect 12 0 26 0;
+#X connect 13 0 12 0;
+#X connect 14 0 16 0;
+#X connect 15 0 19 0;
+#X connect 16 0 45 0;
+#X connect 17 0 16 1;
+#X connect 19 0 23 0;
+#X connect 20 0 18 0;
+#X connect 21 0 45 1;
+#X connect 22 0 2 0;
+#X connect 23 0 18 0;
+#X connect 25 0 1 0;
+#X connect 25 1 8 0;
+#X connect 25 2 13 0;
+#X connect 27 0 28 0;
+#X connect 28 0 20 0;
+#X connect 28 1 18 1;
+#X connect 29 0 30 0;
+#X connect 30 0 17 0;
+#X connect 30 1 21 0;
+#X restore -49 -39 pd interpretation_graphique;
+#X obj 307 -222 cnv 15 300 60 empty empty empty 20 12 0 14 -260097
+-66577 0;
+#X text 309 -219 dans l'exemple 1.2 \, nous allons faire apparaître
+la longitude et la latitude de chaque zone que nous traverserons avec
+la souris;
+#X text 306 -155 [gemmouse] permet de récupérer la position de la
+souris dans l'espace gem;
+#X obj 310 -121 gemmouse;
+#X obj 321 -41 expr (($f1/$f2)*-8)+4;
+#X text -148 -14 tout le patche précédent est mis dans des subpatches
+;
+#X text -147 0 on les crée en faisant [pd LeNom];
+#X obj 294 52 gemhead;
+#X obj 450 -122 r sizeWin;
+#X obj 450 -99 unpack f f;
+#X obj 294 114 circle 0.1;
+#X obj 310 -67 expr (($f1/$f2)*10.24)-5.12;
+#X obj 294 81 translateXYZ 0 0 0.02;
+#X text 294 134 création du curseur blanc;
+#X obj 211 312 gemhead;
+#X obj 293 31 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 214 389 text3d;
+#X floatatom 76 309 5 0 0 0 - - -;
+#X obj 76 281 int;
+#X obj 150 153 / 50;
+#X obj 149 174 - 0.4;
+#X obj 151 195 div 1;
+#X obj 79 255 +;
+#X obj 150 216 - 1;
+#X obj 79 148 / 40;
+#X obj 79 170 + 0;
+#X obj 149 239 * 20;
+#X obj 373 354 pack s s;
+#X obj 373 229 tabread long;
+#X obj 455 242 tabread long;
+#X obj 375 207 t a a;
+#X obj 372 253 / 1000;
+#X obj 455 262 / 1000;
+#X obj 372 272 l2s;
+#X obj 407 280 l2s;
+#X msg 248 367 8;
+#X obj 371 374 makesymbol %s////%s;
+#X msg 132 372 justify left;
+#X obj 213 335 translateXYZ -3 3.3 0.05;
+#X text -168 326 transformation de la position de la souris en pointeur
+dans le tableau;
+#X obj 121 345 loadbang;
+#N canvas 0 22 1440 852 master2 0;
+#X obj 160 -191 gemhead;
+#X obj 160 4 separator;
+#X obj 160 159 translateXYZ;
+#X obj 253 96 expr (($f1/$f2)*8)-4;
+#X obj 322 142 expr (($f1/$f2)*-8)+4;
+#X obj 370 -195 r sizeWin;
+#X obj 370 -173 unpack f f;
+#X obj 160 -129 repeat 200;
+#X obj 253 -79 counter 0 19;
+#X obj 322 -45 counter 0 9;
+#X obj 370 -149 / 50;
+#X obj 427 -150 / 50;
+#X obj 37 -60 tabread magnetude;
+#X obj 37 -79 counter 199;
+#X obj 287 176 separator;
+#X obj 160 188 separator;
+#X obj 287 275 colorRGB 1 0 0 1;
+#X obj 310 254 / 10;
+#X obj 159 335 text3d;
+#X obj 159 213 colorRGB 1 1 1 1;
+#X msg 64 318 text \$1;
+#X obj 337 303 / 20;
+#X obj 287 336 square 0.2;
+#X obj 160 45 translateXYZ -0.5 -1 0;
+#X obj 159 239 translateXYZ 0 0 0.01;
+#X text 56 -214 interprétation graphique des données du tremblement
+de terre;
+#X obj 160 -96 t a b b;
+#X obj 37 -36 s VarTabMagnetude;
+#X obj 64 272 r VarTabMagnetude;
+#X obj 64 295 t a a;
+#X obj 310 206 r VarTabMagnetude;
+#X obj 310 227 t a a;
+#X text 470 -171 nous recevons la grandeur en width et height de l'écran
+;
+#X text 476 -143 nous la divisons par 50;
+#X text 409 82 l'expression ici permet de définir l'écart entre chaque
+zone ici en X il y en aura 19;
+#X text 347 -80 les compteurs permettent de compter en boucle et ceci
+infiniment;
+#X text 475 133 l'expression ici permet de définir l'écart entre
+chaque zone ici en X il y en aura 9;
+#X text 235 -127 le repeat permet de répéter le flux dans chaque
+frame => ici 200 fois;
+#X text 227 -11 pour éviter qu'il y ait du désordre dans la répétition
+: le separator permet d'empêcher que des informations d'une itération
+affecte une autre itération;
+#X text 147 360 grâce au repeat j'ai 200 square dessinés et 200 text3d
+;
+#X text 430 202 on reçoit ici les données de la magnétude;
+#X text 358 248 on fait la variation de la couleur rouge avec;
+#X text 379 302 on fait la taille du square;
+#X text -117 252 on reçoit ici les données de la magnétude;
+#X text -125 336 on récupère la valeur comme un texte et;
+#X text -126 350 la taille du texte;
+#X connect 0 0 7 0;
+#X connect 1 0 23 0;
+#X connect 2 0 14 0;
+#X connect 2 0 15 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 2;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 6 1 11 0;
+#X connect 7 0 26 0;
+#X connect 8 0 3 0;
+#X connect 8 3 9 0;
+#X connect 9 0 4 0;
+#X connect 10 0 3 1;
+#X connect 11 0 4 1;
+#X connect 12 0 27 0;
+#X connect 13 0 12 0;
+#X connect 14 0 16 0;
+#X connect 15 0 19 0;
+#X connect 16 0 22 0;
+#X connect 17 0 16 1;
+#X connect 19 0 24 0;
+#X connect 20 0 18 0;
+#X connect 21 0 22 1;
+#X connect 23 0 2 0;
+#X connect 24 0 18 0;
+#X connect 26 0 1 0;
+#X connect 26 1 8 0;
+#X connect 26 2 13 0;
+#X connect 28 0 29 0;
+#X connect 29 0 20 0;
+#X connect 29 1 18 1;
+#X connect 30 0 31 0;
+#X connect 31 0 17 0;
+#X connect 31 1 21 0;
+#X restore 36 96 pd master2;
+#N canvas 294 22 1213 791 analyse 0;
+#X msg 139 261 raw 1;
+#X obj 139 234 loadbang;
+#X symbolatom 119 638 45 0 0 1 Datetime - -;
+#X floatatom 146 613 10 0 0 1 Lat - -;
+#X floatatom 173 590 10 0 0 1 Lon - -;
+#X floatatom 200 565 10 0 0 1 Magnitude - -;
+#X text 214 527 parse earthquake data;
+#X obj 169 390 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 118 449 list;
+#X msg 118 211 get http://earthquake.usgs.gov/earthquakes/feed/csv/all/day
+;
+#X obj 119 532 packel 1 2 3 5;
+#X text 102 83 earthquake aux Etats Unis durant la journée;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array magnetude 300 float 5;
+#A 0 1.2 5.1 1.1 3.2 1.6 0.5 0.4 0.6 1.1 1.9 0.2 2.5 1.1 1.5 2.9 2
+2.7 4.7 2.5 0.8 6.6 4 2.5 1.5 2.7 1.4 1.4 1 1.3 1.4 4.7 3.6 1.8 3 1.5
+1.5 3 1 0.7 1.3 1.6 4.7 1.4 1.5 0.8 1.7 1.3 1.4 0.4 1.6 2 1.1 2.6 0.4
+3.2 1.8 0.8 1.4 1 5 1.7 0.1 0.3 4.6 1.2 1.7 1.8 0.5 1 1.8 0.4 0.3 0.5
+1 3.5 1.4 1.4 1.8 3 1.5 1.2 0.4 1.4 1.2 1 4.4 2.4 1.9 4.3 1.3 1.7 0.4
+1 5.1 0.2 3.4 1 1.4 0.4 1.5 1.9 0.4 0.2 1.3 1.4 1.5 1.7 2.3 1.6 1.2
+2.1 1.6 1.9 1.4 3.4 1.7 2.1 1.5 2.8 1 5.7 4.4 2.9 1.7 5 4.7 1.7 1.8
+1.6 2 1.2 1.5 1.5 5.1 4.6 0.8 4.5 1.2 0.8 1 0.6 2.1 5.6 0.6 4.7 2.6
+4.7 1.5 1.6 4.9 4.4 1.4 1.2 0.6 0.6 0.5 4.9 0.4 4.9 4.7 0.8 1.8 4.7
+4.2 1.7 0.7 0.4 0.2 1.7 5.6 1.8 0.1 0.8 4.6 4.8 2 1.2 1 1.8 1.5 1.1
+0.8 1.3 1.4 1.4 1.2 1.5 1.9 1.1 1.2 1 5.7 1.3 4.1 2.3 1.1 4.4 1.1 0.8
+1.4 1.2 5.1 1.1 3.2 1.6 0.5 0.4 0.6 1.1 1.9 0.2 2.5 1.1 1.5 6.6 2 2.7
+2.8 2.5 0.8 6.6 4 2.5 1.7 2.7 1.4 1.4 1 1.3 1.4 4.7 3.6 1.8 3 1.5 1.5
+3 1 0.7 1.3 1.6 4.7 1.4 1.5 0.8 1.7 1.3 1.4 0.4 4.9 1.6 2 1.1 2.6 0.4
+3.2 1.8 0.8 1.4 1 5 1.8 0.1 0.3 4.6 1.2 1.7 1.8 0.5 1 1.8 0.4 0.3 0.5
+1 3.7 1.4 1.4 1.8 3 1.5 1.2 0.4 1.4 1.2 1 4.4 2.4 1.9 4.3 1.3 5.7 4.2
+4.1 2.3 1.1 4.4 1.1 0.8 1.4;
+#X coords 0 10 299 -1 200 140 1 0 0;
+#X restore 711 70 graph;
+#X obj 118 495 t a b;
+#X obj 568 512 counter 299;
+#X obj 463 549 tabwrite magnetude;
+#X text 180 283 permet de se connecter à l'adresse IP et de renvoyer
+les informations de la page;
+#X text 181 358 objet de parse créé par Dan Wilcox \, il parse ligne
+à ligne;
+#X text 191 386 bang quand c'est fini;
+#X text 158 450 transformation en un list string;
+#X obj 109 136 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 118 180 metro 10000;
+#X text 587 546 écriture de l'array magnetude;
+#X obj 110 115 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 129 115 bang;
+#X text 132 135 metro;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array long 300 float 5;
+#A 0 -116279 99830 -120633 -97147 -151921 -122817 -122817 -122786 -116081
+-118577 -122792 -117847 -122739 -117702 -147445 -121044 -150328 -147441
+-117845 -121496 142543 51700 -149298 -121969 -117847 -152004 -148125
+-122864 -116460 -151349 129821 -97162 -116966 -151702 -117696 -150767
+-96731 -116777 -122775 -147573 -117257 61802 -116301 -145274 -122769
+-112838 -124850 -117304 -118958 -117954 -111063 -146835 -148836 -122810
+-64884 -145709 -122799 -117823 -118942 99729 -119469 -118942 -118951
+-67016 -116237 -117499 -122826 -122804 -116756 -142506 -122822 -118945
+-122749 -116445 -97095 -116299 -111221 -141629 -97091 -145891 -144905
+-118943 -110794 -116057 -116806 -67056 -153995 -151392 102119 -111216
+-116449 -112676 -147620 99830 -122808 -119631 -116344 -116626 -116084
+-116265 -155286 -122827 -141069 -117221 -148732 -115888 -121571 -115462
+-116080 -150216 -155269 -150084 -155862 -151347 -149946 -149126 -122798
+-116414 -97114 -116908 141494 123229 -97087 -122745 123243 120176 -122816
+-149379 -66677 -150957 -117203 -118264 -111291 124941 123350 -122801
+123513 -148538 -122784 -116333 -112184 -153132 139355 -122824 123076
+-146947 123128 -122747 -116694 122950 123359 -145599 -151333 -122825
+-122825 -122827 123273 -120003 123229 123363 -118816 -120027 123405
+124193 -155472 -149348 -119930 -122173 -120389 138702 -150822 -122166
+-122172 -83485 62403 -121137 0 -116716 -147432 -151036 -149674 -122801
+-151329 -150621 -116662 -116946 -116708 -117257 -151524 -118943 -117034
+62308 -147572 -115241 -146806 -117673 139392 -122828 -122794 -151017
+-116279 99830 -120633 -97147 -151921 -122817 -122817 -122786 -116081
+-118577 -122792 -117847 -122739 -117702 -147445 -121044 -150328 -147441
+-117845 -121496 142543 51700 -149298 -121969 -117847 -152004 -148125
+-122864 -116460 -151349 129821 -97162 -116966 -151702 -117696 -150767
+-96731 -116777 -122775 -147573 -117257 61802 -116301 -145274 -122769
+-112838 -124850 -117304 -118958 122950 -117954 -111063 -146835 -148836
+-122810 -64884 -145709 -122799 -117823 -118942 99729 -119469 -118942
+-118951 -67016 -116237 -117499 -122826 -122804 -116756 -142506 -122822
+-118945 -122749 -116445 -97114 -116299 -111221 -141629 -97091 -145891
+-144905 -118943 -110794 -116057 -116806 -67056 -153995 -151392 102119
+-111216 62308 -147572 -115241 -146806 -117673 139392 -122828 -122794
+-151017;
+#X coords 0 100000 299 -100000 200 140 1 0 0;
+#X restore 679 297 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array lat 300 float 5;
+#A 0 33301 26004 36046 35640 62787 38821 38816 38815 33864 40886 38794
+36178 38799 34791 59197 36070 63441 64991 36176 37056 -3218 28487 63939
+48110 36177 63229 62379 42783 33507 62437 -6560 35808 32601 62028 34966
+60851 35566 33716 38841 60678 33759 27927 33185 62094 38839 37088 48273
+33798 37628 36237 40020 65470 68353 38823 19639 62218 38799 35379 37639
+-2193 46945 37644 37647 -24128 33263 33841 38841 38828 33631 62272
+38839 37650 38789 33516 35690 33228 39438 60632 35619 62270 62064 37648
+39723 33337 33720 -24263 58917 62929 -4159 39428 33513 38149 63526
+26004 38824 38558 33882 32621 33824 32993 19403 38843 61269 34016 61952
+33235 36837 32376 33841 62930 19399 67193 19430 63201 57282 63129 38802
+33222 35675 33910 38478 24848 35719 38783 24832 17147 38812 60135 18035
+61655 34005 35144 38986 7240 24866 38824 24775 61294 38880 33383 41546
+58761 34126 38799 24843 60409 24803 38791 33636 24847 24873 62181 63200
+38849 38847 38845 24905 39639 24839 24871 37655 47681 24852 24457 19489
+62888 39415 46130 39559 -2775 61195 46134 46128 -41753 28245 36574
+61000 33593 63592 64740 63199 38804 63192 61262 32597 33859 34565 37306
+63056 37640 33949 28189 63404 32173 61362 35832 34021 38836 38813 62458
+33301 26004 36046 35640 62787 38821 38816 38815 33864 40886 38794 36178
+38799 34791 59197 36070 63441 64991 36176 37056 -3218 28487 63939 48110
+36177 63229 62379 42783 33507 62437 -6560 35808 32601 62028 34966 60851
+35566 33716 38841 60678 33759 27927 33185 62094 38839 37088 48273 33798
+37628 24847 36237 40020 65470 68353 38823 19639 62218 38799 35379 37639
+-2193 46945 37644 37647 -24128 33263 33841 38841 38828 33631 62272
+38839 37650 38789 33516 35673 33228 39438 60632 35619 62270 62064 37648
+39723 33337 33720 -24263 58917 62929 -4159 39428 28189 63404 32173
+61362 35832 34021 38836 38813 62458;
+#X coords 0 100000 299 -100000 200 140 1 0 0;
+#X restore 901 276 graph;
+#X obj 494 580 tabwrite long;
+#X obj 412 563 * 1000;
+#X obj 505 614 tabwrite lat;
+#X obj 436 604 * 1000;
+#X obj 118 289 http_get;
+#X obj 452 108 import zexy;
+#X obj 117 358 csv_parse;
+#X text 591 575 écriture de l'array de longétude;
+#X text 594 615 écriture de l'array de lattitude;
+#X connect 0 0 32 0;
+#X connect 1 0 0 0;
+#X connect 8 0 13 0;
+#X connect 9 0 32 0;
+#X connect 10 0 2 0;
+#X connect 10 1 3 0;
+#X connect 10 1 31 0;
+#X connect 10 2 4 0;
+#X connect 10 2 29 0;
+#X connect 10 3 5 0;
+#X connect 10 3 15 0;
+#X connect 13 0 10 0;
+#X connect 13 1 14 0;
+#X connect 14 0 15 1;
+#X connect 14 0 28 1;
+#X connect 14 0 30 1;
+#X connect 20 0 21 0;
+#X connect 21 0 9 0;
+#X connect 23 0 9 0;
+#X connect 29 0 28 0;
+#X connect 31 0 30 0;
+#X connect 32 0 34 0;
+#X connect 34 0 8 0;
+#X connect 34 1 7 0;
+#X coords 0 -1 1 1 85 60 1 100 100;
+#X restore -142 -80 pd analyse;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 3 0;
+#X connect 4 0 0 0;
+#X connect 11 0 19 0;
+#X connect 11 0 32 0;
+#X connect 11 1 12 0;
+#X connect 11 1 27 0;
+#X connect 12 0 20 2;
+#X connect 15 0 20 0;
+#X connect 16 0 17 0;
+#X connect 17 0 19 1;
+#X connect 17 1 12 1;
+#X connect 19 0 20 1;
+#X connect 20 0 18 0;
+#X connect 22 0 46 0;
+#X connect 23 0 15 0;
+#X connect 26 0 25 0;
+#X connect 26 0 38 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X connect 29 0 31 0;
+#X connect 30 0 26 0;
+#X connect 31 0 34 0;
+#X connect 32 0 33 0;
+#X connect 33 0 30 0;
+#X connect 34 0 30 1;
+#X connect 35 0 44 0;
+#X connect 36 0 39 0;
+#X connect 37 0 40 0;
+#X connect 38 0 36 0;
+#X connect 38 1 37 0;
+#X connect 39 0 41 0;
+#X connect 40 0 42 0;
+#X connect 41 0 35 0;
+#X connect 42 0 35 1;
+#X connect 43 0 24 1;
+#X connect 44 0 24 0;
+#X connect 45 0 24 0;
+#X connect 46 0 24 0;
+#X connect 48 0 45 0;
+#X connect 48 0 43 0;

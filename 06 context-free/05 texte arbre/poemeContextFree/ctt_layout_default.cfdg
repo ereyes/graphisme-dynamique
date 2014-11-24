@@ -1,0 +1,38 @@
+// ConTextTree Layout: Default
+
+// ConTextTree designs, layout libraries and object libraries are a set of conventional interfaces.  The goal is quick mixing and reuse of Context Free code within large projects or series.  Layout libraries are collections of transforms that do not terminate in primitives (SQUARE, CIRCLE, etc.) but rather terminate in calls to an abstract shape rule, ctt_object, which will be defined externally.  Object libraries are collections of ordered primitives that display to the screen.  In the high-level ctt_design file, ctt_object rules are defined as at least one object library, with optional or recursive calls to further layouts. 
+
+// ## Interface and Conventions ##
+// - a layout can be called by ctt_layout_do, and can be populated by defining ctt_object.
+// - the startshape is always ctt_layout_start
+// - the startshape always calls layout_do to avoid stop and drift rules on the first pass. This is also a good idea when calling a layout in other code.
+// - ctt_layout: randomization. contains at least one call to ctt_layout_do, as well as optional stop rules, drift rules, and recursive drift rules.
+// - ctt_layout_do: movement and shapes. contains at least one call to ctt_object, as well as optional recursive layouts.
+
+// ## Scoping ##
+// Layouts use standardized function names because they are meant to be combined easily into by writing a design file with only a few include statements.  To limit interactions between specific libraries, however, the files need to be scoped. Context Free doesn't support a scoping syntax, but it can be scoped manually by creating new files using the convention (ctt_ -> ctt_scope_).
+//
+// - 1. name each scope (e.g. 1, 2, 3; birds, grass, trees; etc.)
+// - 2. save a copy of each file to your project with the appropriate scope name inserted after the prefix (e.g. ctt_2_layout_default.cfdg)
+// - 3. in each file, search-replace the rule prefix with the correct scope (e.g. ctt_ -> ctt_2_).
+//
+// Now all the libraries within a given scope will interact with each other using standard commands (e.g. ) you created can be called with ctt2_layout_do etc., and they will interact with each other but not with scope 3 files.
+
+startshape ctt_layout_start
+
+rule ctt_object .0000000000001 { SQUARE { b 1 sat 1 hue 0 } } // deferential
+
+rule ctt_layout_start .0000001 {
+	ctt_layout_do { b 1 sat 0.1 } // first call is _do, so we don't stop or drift on the first iteration
+}
+
+rule ctt_layout .0000001 { ctt_layout_do { } }
+rule ctt_layout .00000002 {}                            // stop rule
+rule ctt_layout .0000001 { ctt_layout_do { r  10 } }       // drift rule
+rule ctt_layout .0000001 { ctt_layout_do { r -10 } }       // drift rule
+rule ctt_layout .0000001 { ctt_layout    { hue 10 s .3 } } // drift rule recursive
+
+rule ctt_layout_do .0000001 { // a 4-sided rule
+	4 * { r 90 } ctt_layout [ z -1 x 1 s 0.3 ]
+	ctt_object [ r 5 ]
+}

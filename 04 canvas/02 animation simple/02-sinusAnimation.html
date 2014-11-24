@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+html, body { margin:0px; }
+canvas { display:block; }
+</style>
+<script>
+window.onload = function(){
+	var canvas = document.getElementById('monCanvas'),
+		context = canvas.getContext('2d'),
+		largeur = canvas.width = window.innerWidth,
+		hauteur = canvas.height = window.innerHeight;
+	
+	var centreY = hauteur * .5,
+		centreX = largeur * .5,
+		rayonBase = 100,
+		seuil = 20,
+		vitesse = 0.1,
+		angle = 0;
+	
+	dessin();
+	
+	function dessin(){
+		var rayon = rayonBase + Math.sin(angle) * seuil;
+		
+		context.clearRect(0,0,largeur,hauteur);
+		context.beginPath();
+		context.arc(centreX, centreY, rayon, 0, Math.PI*2);
+		context.fill();
+		
+		angle += vitesse;
+		
+		if((Math.sin(angle) > 0) && (Math.sin(angle) < 0.1)){
+			context.fillStyle = 'rgb('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+',0)';
+		}	
+
+		requestAnimationFrame(dessin);
+	}
+	
+}
+</script>
+</head>
+
+<body>
+<canvas id="monCanvas"></canvas>
+</body>
+</html>

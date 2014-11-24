@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+	p { 
+		font-family:arial;
+		background-color:black;
+		color:white;
+		padding:7px;
+	}
+	
+	.design {
+		border:1px solid orange;
+		float:left;
+		margin:5px;
+		background-color:beige;	
+		position:absolute;
+		opacity:0.5;
+	}
+</style>
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(document).ready(function(){ 
+	
+		$.getJSON("mesAmis.txt", function(donnee){
+			
+			$.each(donnee.data, function(numero, ami){
+			
+				var taille = Math.random()*100;
+				
+				var couleurs = 'rgb('+ 
+					Math.floor(Math.random()*255) +
+					',' + 
+					Math.floor(Math.random()*255) + 
+					',' + 
+					Math.floor(Math.random()*255) + 
+					')';
+				
+				var posX = Math.random()*1000; // position sur width
+				var posY = Math.random()*700; // position sur height
+				
+				var amigo = '<a href="http://facebook.com/';
+				amigo += ami.id + '"><div class="design" style="width:';
+				amigo += taille + 'px; height:';
+				amigo += taille + 'px; border-radius:';
+				amigo += taille + 'px; background-color:';
+				amigo += couleurs + '; top:' + posY + 'px; left:' + posX + 'px;"></div></a>';
+				
+				$("#maViz").append(amigo);
+			
+			});
+		
+		});
+	
+	});
+</script>
+</head>
+
+<body>
+	<h1>Mes amis Facebook</h1>
+    <div id="maViz"></div>
+</body>
+</html>

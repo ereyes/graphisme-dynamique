@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video resize</title>
+
+<script type="text/javascript">
+
+window.onload = function(e) {
+	var sizeElement = document.getElementById("videoSize")
+	sizeElement.addEventListener('change', videoSizeChanged, false);
+	var videoElement = document.getElementById('theVideo');
+	var widthtoHeightRatio = videoElement.width/videoElement.height;	
+	
+	function videoSizeChanged(e) {	
+		var target =  e.target;
+		var videoElement = document.getElementById("theVideo");
+		videoElement.width = target.value;
+		videoElement.height = target.value/widthtoHeightRatio;
+	}
+	
+	
+}
+
+</script>
+</head>
+<body>
+<div>
+<form>
+	Taille vidéo: <input type="range" id="videoSize" min="80" max="1280" step="1" value="320"/>
+ </form>
+ <br>   
+</div>
+
+<div>
+<video  autoplay loop controls id="theVideo" width="320" height="240">
+ <source src="come.mp4">
+ <source src="come.ogv">
+</video>
+</div>
+
+</body>
+</html>
+
+
+
+

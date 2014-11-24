@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <style>
+		body { margin:0px; }
+    	.ami {
+			width:15px;
+			height:15px;
+			border-radius:15px;
+			border:1px solid gray;
+			margin:2px;
+			position:absolute;
+			opacity:0.8;
+		}
+		
+		#controls {
+			z-index:5000;
+			background-color:#eee;
+			position:fixed;
+			bottom:0px;
+			width:100%;
+			font-family:arial;
+			font-size:80%;
+			padding-bottom:30px;
+			padding-left:20px;
+			opacity:0.8;
+		}
+    </style>
+    <script src="jquery-2.1.0.min.js"></script>
+    <script>
+		var friendsTable = [];
+		var lancer_interval;
+	
+		function animAll(){
+			for (i=0; i<friendsTable.length; i++){
+				var amiID= "ami" + i;
+				var newY = Math.random() * 500;
+				var newX = Math.random() * 900;
+				$('#'+ amiID).css('position', 'absolute');
+				$('#' + amiID).animate({left:newX, top:newY}, 100);
+			}	
+		}
+		
+		function animate(){
+			$("#btn-Pause").show();
+			$("#btn-Order").hide();
+			$("#btn-Disrupt").hide();
+			$("#btn-Anim").hide();
+			lancer_interval = setInterval('animAll();',600); 
+		}
+	
+		function pause(){
+			$("#btn-Pause").hide();
+			$("#btn-Order").show();
+			$("#btn-Disrupt").hide();
+			$("#btn-Anim").show();
+			clearInterval(lancer_interval);
+		}
+		
+		function order(){
+			clearInterval(lancer_interval);
+			$("#btn-Pause").hide();
+			$("#btn-Order").hide();
+			$("#btn-Disrupt").show();
+			$("#btn-Anim").hide();
+			for (i=0; i<friendsTable.length; i++){
+					var amiID= "ami" + i;
+					$('#'+ amiID).css('position', 'relative');
+					$('#'+ amiID).css('float', 'left');
+					$('#' + amiID).animate({left:0, top:0}, 1000);
+			}
+		}
+
+		function disrupt(){
+			clearInterval(lancer_interval);
+			$("#btn-Pause").hide();
+			$("#btn-Order").show();
+			$("#btn-Disrupt").show();
+			$("#btn-Anim").show();
+			for (i=0; i<friendsTable.length; i++){
+					var amiID= "ami" + i;
+					$('#'+ amiID).css('position', 'absolute');
+					$('#' + amiID).animate({left:Math.random()*900, top:Math.random()*500}, 1000);
+			}
+		}
+    
+		$(document).ready(function(){
+
+			$("#btn-Pause").hide();
+			$("#btn-Order").show();
+			$("#btn-Disrupt").show();
+			$("#btn-Anim").show();
+			
+			$.getJSON("mesAmis.txt", function(data){
+			
+				$.each(data.data, function(num, friend){
+				
+					var couleurs = 'rgb(' + 
+						(Math.floor(Math.random()*256)) + ',' + 
+						(Math.floor(Math.random()*256)) + ',' +
+						(Math.floor(Math.random()*256)) + ')';
+					
+					var randSize = Math.random()*50;
+					var randPosX = 40 + (Math.random()*900);
+					var randPosY = 20 + (Math.random()*500);
+					
+					var friendsNumber = num+1;
+					var numAmi = "";
+					numAmi = "ami" + num;
+					friendsTable[num] = '<a href="';
+					friendsTable[num] += 'https://facebook.com/' + friend.id + '">';
+					friendsTable[num] += '<div class="ami" id="' + numAmi + '" + style="background-color:'+
+						couleurs +'; width:'+
+						randSize+'px; height:'+
+						randSize+'px; border-radius:'+
+						randSize+'px; left:'+
+						randPosX +'px; top:'+ 
+						randPosY + 'px;"></div></a>';
+					
+					$("#myViz").append(friendsTable[num]);
+				
+				});
+			
+			});
+			
+		});
+	
+    </script>
+</head>
+
+<body>
+	<div id="controls">
+        <h1>Meet my Facebook friends</h1>
+        <a href="http://facebook.com">go to my Facebook page</a>
+        <button id="btn-Anim" onClick="animate();">Animate</button>
+        <button id="btn-Pause" onClick="pause();">Pause</button>
+        <button id="btn-Disrupt" onClick="disrupt();">Disorder</button>
+        <button id="btn-Order" onClick="order();">Order</button>
+    </div>
+    <div id="myViz"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+startshape ctt_marked_shapes
+
+rule ctt_marked_shapes {
+	ctt_marked_SQUARE    { s .3333 x -.3333 }
+	ctt_marked_CIRCLE    { s .3333 }
+	ctt_marked_TRIANGLE  { s .3333 x +.3333 }
+}
+
+rule ctt_marked_SQUARE   { SQUARE   {} ctt_marker {} }
+rule ctt_marked_CIRCLE   { CIRCLE   {} ctt_marker {} }
+rule ctt_marked_TRIANGLE { TRIANGLE {} ctt_marker {} }
+
+rule ctt_marker {
+	SQUARE   { x 0.25  size 0.5 0.07              brightness -1  saturation -1 }
+	TRIANGLE { x 0.5   size 0.14      rotate -90  brightness -1  saturation -1 }
+	SQUARE   { y 0.25  size 0.07 0.5              brightness -1  saturation -1 }
+	TRIANGLE { y 0.5   size 0.14                  brightness -1  saturation -1 }
+	CIRCLE   {         size 0.12                  brightness -1  saturation -1 }
+	
+	SQUARE   { x 0.25  size 0.5 0.05              brightness  1  saturation -1 }
+	TRIANGLE { x 0.5   size 0.1       rotate -90  brightness  1  saturation -1 }
+	SQUARE   { y 0.25  size 0.05 0.5              brightness  1  saturation -1 }
+	TRIANGLE { y 0.5   size 0.1                   brightness  1  saturation -1 }
+	CIRCLE   {         size 0.1                   brightness  1  saturation -1 }
+}

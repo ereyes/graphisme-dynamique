@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>canvas, img { border:1px solid gray;}</style>
+<script>
+
+var canvas;
+var context;
+
+window.onload = function() {
+	canvas = document.getElementById('monCanvas');
+	context = canvas.getContext('2d');
+	
+}
+
+function dessiner() {
+	
+	context.clearRect(0,0,canvas.width, canvas.height);
+	
+	var monText = document.getElementById('monTexte').value;
+	var image = new Image();
+	var monImage = document.getElementById('monImage').value;
+	
+	
+	image.src = monImage;
+	
+	context.drawImage(image,canvas.width/3,canvas.height/3);
+	
+	
+	context.font = "bold 100px Arial";
+	context.shadowColor = "gray";
+	context.shadowOffsetX = 2;
+	context.shadowBlur = 3;
+	context.strokeStyle = "brown";
+	context.strokeText(monText, 10, 100);
+
+}
+
+</script>
+</head>
+
+<body>
+	<input id="monTexte" value="Pink Floyd">
+    <br>
+    <input id="monImage" value="http://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" size="100">
+    <button onClick="dessiner();">Je veux ma carte !</button>
+    <br>
+	<canvas id="monCanvas" width="700" height="500"></canvas>
+     &nbsp; <img id="image" />
+    <br>
+</body>
+</html>

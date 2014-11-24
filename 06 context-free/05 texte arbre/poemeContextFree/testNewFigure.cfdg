@@ -1,0 +1,31 @@
+startshape Go
+ 
+background { b 1 }
+ 
+include ctt_object_default.cfdg
+include ctt_layout_default.cfdg
+include poeme.cfdg
+
+rule Go{
+    50 * { r 7.2 } Branch { b 1 a 1 }
+}
+ 
+rule Branch {
+    Grad{}
+    Branch { y 1 s .999 a -.0032 }
+    ctt_object {}
+}
+ 
+rule Branch .09 {
+    Branch { r 6 }
+}
+ 
+rule Branch .09 {
+    Branch { r -6 }
+}
+ 
+rule Grad{
+    30 * { x 1 s 1 z -1 a -.11 } SQUARE{ b -1 }
+    30 * { x -1 s 1.1 z -1 a -.11 } SQUARE{ b -1 }
+    ctt_object {}
+}

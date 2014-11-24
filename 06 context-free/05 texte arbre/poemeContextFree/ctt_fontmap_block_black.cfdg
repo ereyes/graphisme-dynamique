@@ -1,0 +1,70 @@
+// ConTextTree fontmap: block
+
+// Block Typeface was originally created by Brad Sandman.
+// http://www.contextfreeart.org/gallery/view.php?id=66
+
+include block_typeface_black.cfdg
+
+startshape ctt_test_fontmap_start
+   include ctt_test_fontmap.cfdg
+
+	rule     A        { ctt_object_bg {} A_BLOCK_B { s .95 } }
+	rule     B        { ctt_object_bg {} B_BLOCK_B { s .95 } }
+	rule     C        { ctt_object_bg {} C_BLOCK_B { s .95 } }
+	rule     D        { ctt_object_bg {} D_BLOCK_B { s .95 } }
+	rule     E        { ctt_object_bg {} E_BLOCK_B { s .95 } }
+	rule     F        { ctt_object_bg {} F_BLOCK_B { s .95 } }
+	rule     G        { ctt_object_bg {} G_BLOCK_B { s .95 } }
+	rule     H        { ctt_object_bg {} H_BLOCK_B { s .95 } }
+	rule     I        { ctt_object_bg {} I_BLOCK_B { s .95 } }
+	rule     J        { ctt_object_bg {} J_BLOCK_B { s .95 } }
+	rule     K        { ctt_object_bg {} K_BLOCK_B { s .95 } }
+	rule     L        { ctt_object_bg {} L_BLOCK_B { s .95 } }
+	rule     M        { ctt_object_bg {} M_BLOCK_B { s .95 } }
+	rule     N        { ctt_object_bg {} N_BLOCK_B { s .95 } }
+	rule     O        { ctt_object_bg {} O_BLOCK_B { s .95 } }
+	rule     P        { ctt_object_bg {} P_BLOCK_B { s .95 } }
+	rule     Q        { ctt_object_bg {} Q_BLOCK_B { s .95 } }
+	rule     R        { ctt_object_bg {} R_BLOCK_B { s .95 } }
+	rule     S        { ctt_object_bg {} S_BLOCK_B { s .95 } }
+	rule     T        { ctt_object_bg {} T_BLOCK_B { s .95 } }
+	rule     U        { ctt_object_bg {} U_BLOCK_B { s .95 } }
+	rule     V        { ctt_object_bg {} V_BLOCK_B { s .95 } }
+	rule     W        { ctt_object_bg {} W_BLOCK_B { s .95 } }
+	rule     X        { ctt_object_bg {} X_BLOCK_B { s .95 } }
+	rule     Y        { ctt_object_bg {} Y_BLOCK_B { s .95 } }
+	rule     Z        { ctt_object_bg {} Z_BLOCK_B { s .95 } }
+	rule NUM_0        { ctt_object_bg {} NUM_0_BLOCK_B { s .95 } }
+	rule NUM_1        { ctt_object_bg {} NUM_1_BLOCK_B { s .95 } }
+	rule NUM_2        { ctt_object_bg {} NUM_2_BLOCK_B { s .95 } }
+	rule NUM_3        { ctt_object_bg {} NUM_3_BLOCK_B { s .95 } }
+	rule NUM_4        { ctt_object_bg {} NUM_4_BLOCK_B { s .95 } }
+	rule NUM_5        { ctt_object_bg {} NUM_5_BLOCK_B { s .95 } }
+	rule NUM_6        { ctt_object_bg {} NUM_6_BLOCK_B { s .95 } }
+	rule NUM_7        { ctt_object_bg {} NUM_7_BLOCK_B { s .95 } }
+	rule NUM_8        { ctt_object_bg {} NUM_8_BLOCK_B { s .95 } }
+	rule NUM_9        { ctt_object_bg {} NUM_9_BLOCK_B { s .95 } }
+	rule SYM_AMP      { ctt_object_bg {} AT_BLOCK_B { s .95 } }
+	rule SYM_BRACKETS { ctt_object_bg {} LSQUOTE_BLOCK_B { s .5 1 x -.3 y -.4 } RSQUOTE_BLOCK_B { s .5 1 x 0 y -.4 } }
+	rule SYM_PLUS     { ctt_object_bg {} PLUS_BLOCK_B { s .95 } }
+	// to add....
+	// rule SYM_      { ctt_object_bg {}     ACUTE_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     GRAVE_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}   LSQUOTE_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}   RSQUOTE_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}   LDQUOTE_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}   RDQUOTE_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     SLASH_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {} BACKSLASH_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     MINUS_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}      MULT_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}       DIV_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}  ASTERISK_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}    EQUALS_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     QUEST_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}    EXCLAM_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}    PERIOD_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     COMMA_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     COLON_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {} SEMICOLON_BLOCK_B { s .95 } }
+	// rule SYM_      { ctt_object_bg {}     TILDA_BLOCK_B { s .95 } }

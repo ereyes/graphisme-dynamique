@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vidéo rotation</title>
+<script type="text/javascript">
+
+var videoElement;
+var videoDiv;
+
+
+window.onload = function() {
+	videoElement = document.createElement('video');
+	videoDiv = document.createElement('div');
+	document.body.appendChild(videoDiv);
+	videoDiv.appendChild(videoElement);
+	videoDiv.setAttribute("style", "display:none;");
+	var videoType = supportedVideoFormat(videoElement);
+	if (videoType == "") {
+		alert("no video support");
+		return;
+	}
+	
+	videoElement.setAttribute("src", "comeogg." + videoType);
+	videoElement.addEventListener("canplaythrough",this,false);	
+	
+	
+	
+	  var rotation = 0;
+	
+  
+	  function  drawScreen () {
+	
+			//Background
+			context.fillStyle = 'gray';
+			context.fillRect(0, 0, theCanvas.width, theCanvas.height);
+			//Box
+			context.strokeStyle = 'white'; 
+			context.strokeRect(5,  5, theCanvas.width-10, theCanvas.height-10);
+			
+			//video
+			//*** Start rotation calculation
+			context.save();
+			context.setTransform(1,0,0,1,0,0); //resets the transformation back to the "identity" - basically clears it.
+			
+			
+			var angleInRadians =rotation * Math.PI / 180;
+			var x=theCanvas.width/2;
+			var y=theCanvas.height/2;
+			var videoWidth=320;
+			var videoHeight=240;
+			context.translate(x, y); // move the origin of the transform to the center of the video window;
+			context.rotate(angleInRadians);
+			 
+			context.drawImage(videoElement ,-.5*videoWidth, -.5*videoHeight);
+			
+			context.restore();
+			rotation++;
+			 
+			
+			
+			
+		}
+		
+		var theCanvas = document.getElementById('canvasOne');
+		var context = theCanvas.getContext('2d');
+		
+		videoElement.setAttribute("loop", "true");
+		videoElement.loop = true;
+		videoElement.play();
+		
+		
+		
+		setInterval(drawScreen, 33);
+	
+}
+
+
+function supportedVideoFormat(video) {
+	var returnExtension = "";
+	
+	if(video.canPlayType("video/ogg") =="probably" || video.canPlayType("video/ogg") == "maybe") {
+		returnExtension = "ogg";
+	} else if(video.canPlayType("video/mp4") == "probably" || video.canPlayType("video/mp4") == "maybe") {
+		returnExtension = "mp4";
+	}
+	
+	return returnExtension;
+	
+}
+
+
+
+</script>
+
+</head>
+<body>
+<canvas id="canvasOne" width="900" height="600"></canvas>
+
+</body>
+</html>
+
+
+
+

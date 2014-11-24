@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Création dynamique de l'élément audio dans camvas</title>
+
+<script>
+
+var audioElem;
+
+window.onload = function() {
+	audioElem = document.createElement("audio");
+	document.body.appendChild(audioElem);
+	var audioType = formatSupporte(audioElem);
+	if (audioType == "") {
+		alert("pas d'audio supporté");
+		return;
+	}
+	audioElem.setAttribute("src", "fatsax." + audioType);
+	audioElem.addEventListener("canplaythrough",function(){appAudio();},false);
+}
+
+
+function formatSupporte(audio) {
+	
+	var donneExtension = "";
+	
+	if (audio.canPlayType("audio/ogg") =="probably" || audio.canPlayType("audio/ogg") == "maybe") {
+		donneExtension = "ogg";
+	} else if(audio.canPlayType("audio/wav") =="probably" || audio.canPlayType("audio/wav") == "maybe") {
+		donneExtension = "wav";
+	} else if(audio.canPlayType("audio/mp3") == "probably" || audio.canPlayType("audio/mp3") == "maybe") {
+		donneExtension = "mp3";
+	}
+	
+	return donneExtension;
+	
+}
+
+function appAudio() {
+  
+  var canvas = document.getElementById('monCanvas');
+  var context = canvas.getContext('2d');
+  audioElem.play();
+  audioElem.controls = true; // si on veut changer les propriétés par défaut
+  
+  function  dessiner () {
+
+		// Fond
+		
+		context.fillStyle = "#666";
+		context.fillRect(0, 0, canvas.width, canvas.height);
+		
+		
+		// Texte
+		context.fillStyle    = "#eee";
+		context.fillText  ("Duration: " + audioElem.duration,  20 ,30);
+		context.fillText  ("Current time: " + audioElem.currentTime,  20 ,60);
+		context.fillText  ("Loop: " + audioElem.loop,  20 ,90);
+		context.fillText  ("Autoplay: " + audioElem.autoplay,  20 ,120);
+		context.fillText  ("Muted: " + audioElem.muted,  20 ,150);
+		context.fillText  ("Controls: " + audioElem.controls,  20 ,180);
+		context.fillText  ("Volume: " + audioElem.volume,  20 ,210);
+		context.fillText  ("Paused: " + audioElem.paused,  20 ,240);
+		context.fillText  ("Ended: " + audioElem.ended,  20 ,270);
+		context.fillText  ("Source: " + audioElem.currentSrc,  20 ,300);
+		context.fillText  ("Can Play OGG: " + audioElem.canPlayType("audio/ogg"),  20 ,330);
+		context.fillText  ("Can Play WAV: " + audioElem.canPlayType("audio/wav"),  20 ,360);
+		context.fillText  ("Can Play MP3: " + audioElem.canPlayType("audio/mp3"),  20 ,390);
+		
+		context.font = "normal 15px Arial";	
+		
+  			
+	}
+	
+	setInterval(dessiner, 33);	
+	
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+<canvas id="monCanvas" width="600" height="420"></canvas>
+
+</body>
+</html>

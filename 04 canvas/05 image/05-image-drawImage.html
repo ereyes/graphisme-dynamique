@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--
+	Canvas: placing an image
+-->
+
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color:#eee;
+			}
+			canvas {
+				border:1px solid gray;
+			}
+		</style>
+		<script language="JavaScript" type="text/javascript">
+		window.onload = function() {
+			var canvas = document.getElementById("myCanvas");
+			var context = canvas.getContext("2d");
+			
+			var image = new Image();
+			
+			image.onload = function() {
+				context.drawImage(image, 0, 0, 406, 300);
+			}
+			
+			image.src = "simpsons.jpg";
+			
+		};
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="700" height="400"></canvas>
+	</body>
+</html>

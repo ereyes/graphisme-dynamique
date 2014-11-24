@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Animation + boutons + sauvegarder image</title>
+
+<style>
+
+canvas, img {border: 1px solid gray;}
+
+</style>
+
+<script>
+
+var canvas;
+var context;
+var process;
+
+window.onload = function() {
+	canvas = document.getElementById('myCanvas');
+	context = canvas.getContext('2d');
+	
+	context.globalAlpha = 0.5;
+}
+
+function dessiner() {
+	if(process == null){
+		process = window.setInterval('animer()', 100);
+	}
+}
+
+function animer() {
+	
+	var x = Math.random() * canvas.width;
+	var y = Math.random() * canvas.height;
+	var rayon = Math.random() * 50;
+	
+	var couleurs = ['pink', 'orange', 'brown', 'purple', 'sand', 'aqua'];
+	
+	var couleur = couleurs[Math.floor(Math.random() * couleurs.length)];
+	
+	context.beginPath();
+	context.arc(x, y, rayon, 0, Math.PI * 2);
+	
+	context.fillStyle = couleur;
+	
+	//context.stroke();
+	context.fill();
+	
+}
+
+function arreter() {
+	window.clearInterval(process);
+	process = null;
+}
+
+function effacer() {
+	context.clearRect(0, 0, canvas.width, canvas.height);	
+}
+
+function sauvegarder() {
+	
+	var imgElem = document.getElementById('image');
+	imgElem.src = canvas.toDataURL();	
+}
+
+</script>
+
+</head>
+
+<body>
+
+<canvas id="myCanvas" width="700" height="400"></canvas> &nbsp; <img id="image" />
+<br />
+<button onclick="dessiner();">Dessiner</button>
+<button onclick="arreter();">Arreter</button>
+<button onclick="effacer();">Effacer</button>
+<button onclick="sauvegarder();">Créer une image PNG</button>
+</body>
+</html>

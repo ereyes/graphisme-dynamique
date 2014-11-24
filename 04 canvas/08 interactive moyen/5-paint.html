@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Petite application Paint -->
+<html>
+<head>
+	<style>
+		body {
+			background-color:#eee;
+		}
+		canvas {
+			border:1px solid gray;
+		}
+	</style>
+	<script>
+	
+		// On définit des variables globales
+		var canvas;
+		var context;
+		
+		window.onload = function() {
+			canvas = document.getElementById("myCanvas");
+			context = canvas.getContext("2d");
+			
+			// Évènements de la souris et appel aux fonctions
+			canvas.onmousedown = commence;
+			canvas.onmousemove = dessin;
+			canvas.onmouseup = arret;
+		}
+		
+		// varibale globale pour vérifier l'état de la fonction
+		var marche = false;
+		
+		function commence(e) {
+			marche = true;
+			context.beginPath();
+			context.moveTo(e.pageX-canvas.offsetLeft, e.pageY-canvas.offsetTop);			
+		}
+		
+		function dessin(e) {
+			var x = e.pageX - canvas.offsetLeft;
+			var y = e.pageY - canvas.offsetTop;
+				
+			if (marche == true) {
+				context.lineTo(x, y);
+				//context.strokeStyle = "orange";
+				context.lineWidth = 3;
+				context.stroke();	
+			}				
+			
+		}
+		
+		function arret() {
+			marche = false;
+		}
+		
+		function effacer() {
+			context.clearRect(0, 0, canvas.width, canvas.height);
+		}
+		
+		function changeCouleur(couleur) {
+			context.strokeStyle = couleur;
+		}
+		
+		function saveCanvas01() {
+			window.location = canvas.toDataURL("image/jpg");
+		}
+		
+		function saveCanvas02() {
+			var copy = document.getElementById("image");	
+			copy.src = canvas.toDataURL();
+		}
+		
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" width="600" height="400"></canvas>
+	<div>
+		<button value="Effacer" onclick="effacer();">Effacer</button>
+		<button value="Rouge" onclick="changeCouleur('#FF0000');">Rouge</button>
+		<button value="Noir" onclick="changeCouleur('#000000');">Noir</button>
+		<button value="Vert" onclick="changeCouleur('darkgreen');">Vert</button>
+		<button value="Save" onclick="saveCanvas01();">Sauvegarder nouvel onglet</button>
+		<button value="Save 02" onclick="saveCanvas02();">Copier au dessous</button>
+	</div>
+	<div>
+		<a href="#" onclick="saveCanvas01();"><img id="image" /></a>
+	</div>
+</body>
+</html>

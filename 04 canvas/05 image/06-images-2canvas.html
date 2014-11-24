@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+	Canvas: placing an image
+-->
+
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color:#eee;
+			}
+			canvas {
+				border:1px solid gray;
+			}
+			#texto {
+				font-size: 120%;
+				font-family:Arial;
+				font-weight:bold;
+			}
+		</style>
+		<script language="JavaScript" type="text/javascript">
+		
+		var canvas;
+		var context;
+		var canvas2;
+		var context2;
+		
+		var simpsons = new Image();
+		simpsons.src = "simpsons.jpg";
+		
+
+		
+		window.onload = function() {
+			canvas = document.getElementById("myCanvas");
+			canvas2 = document.getElementById("canvas2");
+
+			context = canvas.getContext("2d");
+			context2 = canvas2.getContext("2d");
+
+			drawScreen();
+
+		}
+		
+		function drawScreen() {
+			
+			context.drawImage(simpsons, 0, 0);
+			context2.drawImage(canvas, 200, 150, 50, 50, 0, 0, 100, 100);
+
+		}
+		
+		
+		var vids = ['vid01','vid01','vid01','vid01','vid01'];
+		
+		$('iframe').attr('src', vids[Math.floor(Math.random()*vids.length)]);
+		
+		
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="600" height="600"></canvas>
+		<canvas id="canvas2" width="100" height="100"></canvas>
+		<div id="texto">Using two canvas</div>
+	</body>
+</html>

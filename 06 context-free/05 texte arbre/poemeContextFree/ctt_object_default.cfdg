@@ -1,0 +1,11 @@
+// ConTextTree Object: default
+
+startshape ctt_object_start
+      rule ctt_object_start { ctt_object { } }
+
+   include ctt_marked_shapes.cfdg
+
+// ----------------------------------------------
+
+rule ctt_object    .0000001 { ctt_marked_SQUARE [ b 1 sat 1 hue 0 ] } // simple object
+rule ctt_object_bg .0000001 {                                       } // default background is nothing - this is a hook for layered objects (like font letters!) but we can't count on it to be overridden - this line is just a reminder that it is specified, it doesn't do anything.

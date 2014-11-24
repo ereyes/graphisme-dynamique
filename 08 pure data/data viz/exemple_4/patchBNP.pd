@@ -1,0 +1,9 @@
+#N canvas 41 390 450 300 10;
+#X declare -lib moocow;
+#X declare -lib list-abs;
+#X declare -lib mrpeach;
+#X declare -lib zexy;
+#X declare -lib moocow;
+#X obj 26 91 a_gemwin;
+#X obj 27 17 http_parseBNP;
+#X obj 190 55 graphism;
